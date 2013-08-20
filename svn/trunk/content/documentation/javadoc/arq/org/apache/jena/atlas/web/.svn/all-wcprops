@@ -3,6 +3,12 @@ svn:wc:ra_dav:version-url
 V 103
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/atlas/web
 END
+package-use.html
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/atlas/web/package-use.html
+END
 package-summary.html
 K 25
 svn:wc:ra_dav:version-url
@@ -68,10 +74,4 @@ K 25
 svn:wc:ra_dav:version-url
 V 115
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/atlas/web/WebLib.html
-END
-package-use.html
-K 25
-svn:wc:ra_dav:version-url
-V 120
-/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/atlas/web/package-use.html
 END

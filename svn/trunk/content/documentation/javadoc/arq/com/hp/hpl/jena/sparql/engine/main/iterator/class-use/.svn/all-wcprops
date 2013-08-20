@@ -3,6 +3,24 @@ svn:wc:ra_dav:version-url
 V 131
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/engine/main/iterator/class-use
 END
+QueryIterUnion.html
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/engine/main/iterator/class-use/QueryIterUnion.html
+END
+QueryIterJoinBase.html
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/engine/main/iterator/class-use/QueryIterJoinBase.html
+END
+QueryIterLeftJoin.html
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/engine/main/iterator/class-use/QueryIterLeftJoin.html
+END
 QueryIterOptionalIndex.html
 K 25
 svn:wc:ra_dav:version-url
@@ -26,22 +44,4 @@ K 25
 svn:wc:ra_dav:version-url
 V 151
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/engine/main/iterator/class-use/QueryIterGraph.html
-END
-QueryIterUnion.html
-K 25
-svn:wc:ra_dav:version-url
-V 151
-/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/engine/main/iterator/class-use/QueryIterUnion.html
-END
-QueryIterJoinBase.html
-K 25
-svn:wc:ra_dav:version-url
-V 154
-/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/engine/main/iterator/class-use/QueryIterJoinBase.html
-END
-QueryIterLeftJoin.html
-K 25
-svn:wc:ra_dav:version-url
-V 154
-/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/engine/main/iterator/class-use/QueryIterLeftJoin.html
 END

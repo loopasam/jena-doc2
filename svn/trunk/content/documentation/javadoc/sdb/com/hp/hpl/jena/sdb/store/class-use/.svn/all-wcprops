@@ -3,6 +3,18 @@ svn:wc:ra_dav:version-url
 V 113
 /repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/store/class-use
 END
+StoreFactory.html
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/store/class-use/StoreFactory.html
+END
+DatasetStoreGraph.html
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/store/class-use/DatasetStoreGraph.html
+END
 TableDesc.html
 K 25
 svn:wc:ra_dav:version-url
@@ -158,16 +170,4 @@ K 25
 svn:wc:ra_dav:version-url
 V 130
 /repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/store/class-use/StoreLoader.html
-END
-StoreFactory.html
-K 25
-svn:wc:ra_dav:version-url
-V 131
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/store/class-use/StoreFactory.html
-END
-DatasetStoreGraph.html
-K 25
-svn:wc:ra_dav:version-url
-V 136
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/store/class-use/DatasetStoreGraph.html
 END

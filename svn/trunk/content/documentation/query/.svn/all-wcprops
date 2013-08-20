@@ -3,60 +3,6 @@ svn:wc:ra_dav:version-url
 V 71
 /repos/asf/!svn/ver/1512007/jena/site/trunk/content/documentation/query
 END
-sparql-remote.mdtext
-K 25
-svn:wc:ra_dav:version-url
-V 92
-/repos/asf/!svn/ver/1444706/jena/site/trunk/content/documentation/query/sparql-remote.mdtext
-END
-algebra.mdtext
-K 25
-svn:wc:ra_dav:version-url
-V 86
-/repos/asf/!svn/ver/1336579/jena/site/trunk/content/documentation/query/algebra.mdtext
-END
-library-propfunc.mdtext
-K 25
-svn:wc:ra_dav:version-url
-V 95
-/repos/asf/!svn/ver/1336579/jena/site/trunk/content/documentation/query/library-propfunc.mdtext
-END
-explain.mdtext
-K 25
-svn:wc:ra_dav:version-url
-V 86
-/repos/asf/!svn/ver/1444706/jena/site/trunk/content/documentation/query/explain.mdtext
-END
-group-by.mdtext
-K 25
-svn:wc:ra_dav:version-url
-V 87
-/repos/asf/!svn/ver/1413823/jena/site/trunk/content/documentation/query/group-by.mdtext
-END
-download.mdtext
-K 25
-svn:wc:ra_dav:version-url
-V 87
-/repos/asf/!svn/ver/1337964/jena/site/trunk/content/documentation/query/download.mdtext
-END
-index.mdtext
-K 25
-svn:wc:ra_dav:version-url
-V 84
-/repos/asf/!svn/ver/1468378/jena/site/trunk/content/documentation/query/index.mdtext
-END
-assignment.mdtext
-K 25
-svn:wc:ra_dav:version-url
-V 89
-/repos/asf/!svn/ver/1336579/jena/site/trunk/content/documentation/query/assignment.mdtext
-END
-app_api.mdtext
-K 25
-svn:wc:ra_dav:version-url
-V 86
-/repos/asf/!svn/ver/1336579/jena/site/trunk/content/documentation/query/app_api.mdtext
-END
 arq-query-eval.mdtext
 K 25
 svn:wc:ra_dav:version-url
@@ -206,4 +152,58 @@ K 25
 svn:wc:ra_dav:version-url
 V 91
 /repos/asf/!svn/ver/1336579/jena/site/trunk/content/documentation/query/programmatic.mdtext
+END
+sparql-remote.mdtext
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1444706/jena/site/trunk/content/documentation/query/sparql-remote.mdtext
+END
+algebra.mdtext
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1336579/jena/site/trunk/content/documentation/query/algebra.mdtext
+END
+library-propfunc.mdtext
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1336579/jena/site/trunk/content/documentation/query/library-propfunc.mdtext
+END
+explain.mdtext
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1444706/jena/site/trunk/content/documentation/query/explain.mdtext
+END
+group-by.mdtext
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1413823/jena/site/trunk/content/documentation/query/group-by.mdtext
+END
+download.mdtext
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1337964/jena/site/trunk/content/documentation/query/download.mdtext
+END
+index.mdtext
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1468378/jena/site/trunk/content/documentation/query/index.mdtext
+END
+assignment.mdtext
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1336579/jena/site/trunk/content/documentation/query/assignment.mdtext
+END
+app_api.mdtext
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1336579/jena/site/trunk/content/documentation/query/app_api.mdtext
 END

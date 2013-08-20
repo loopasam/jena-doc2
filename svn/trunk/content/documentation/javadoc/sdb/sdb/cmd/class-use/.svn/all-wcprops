@@ -3,6 +3,12 @@ svn:wc:ra_dav:version-url
 V 95
 /repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/sdb/cmd/class-use
 END
+ModData.html
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/sdb/cmd/class-use/ModData.html
+END
 ModStore.html
 K 25
 svn:wc:ra_dav:version-url
@@ -38,10 +44,4 @@ K 25
 svn:wc:ra_dav:version-url
 V 110
 /repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/sdb/cmd/class-use/CmdArgsDB.html
-END
-ModData.html
-K 25
-svn:wc:ra_dav:version-url
-V 108
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/sdb/cmd/class-use/ModData.html
 END

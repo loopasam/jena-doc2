@@ -3,17 +3,29 @@ svn:wc:ra_dav:version-url
 V 112
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/riot/out/class-use
 END
-NodeToLabel.html
+OutputLangUtils.html
 K 25
 svn:wc:ra_dav:version-url
-V 129
-/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/riot/out/class-use/NodeToLabel.html
+V 133
+/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/riot/out/class-use/OutputLangUtils.html
+END
+NodeFmtLib.html
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/riot/out/class-use/NodeFmtLib.html
 END
 NQuadsWriter.html
 K 25
 svn:wc:ra_dav:version-url
 V 130
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/riot/out/class-use/NQuadsWriter.html
+END
+NodeToLabel.html
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/riot/out/class-use/NodeToLabel.html
 END
 TurtleValidate.html
 K 25
@@ -104,16 +116,4 @@ K 25
 svn:wc:ra_dav:version-url
 V 134
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/riot/out/class-use/SinkEntityOutput.html
-END
-NodeFmtLib.html
-K 25
-svn:wc:ra_dav:version-url
-V 128
-/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/riot/out/class-use/NodeFmtLib.html
-END
-OutputLangUtils.html
-K 25
-svn:wc:ra_dav:version-url
-V 133
-/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/riot/out/class-use/OutputLangUtils.html
 END

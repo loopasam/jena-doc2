@@ -3,6 +3,36 @@ svn:wc:ra_dav:version-url
 V 99
 /repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util
 END
+URIref.html
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/URIref.html
+END
+FileUtils.html
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/FileUtils.html
+END
+TypedStream.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/TypedStream.html
+END
+LocatorFile.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/LocatorFile.html
+END
+Locator.html
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/Locator.html
+END
 IteratorCollection.html
 K 25
 svn:wc:ra_dav:version-url
@@ -45,17 +75,17 @@ svn:wc:ra_dav:version-url
 V 117
 /repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/MonitorGraph.html
 END
-Tokenizer.html
-K 25
-svn:wc:ra_dav:version-url
-V 114
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/Tokenizer.html
-END
 FileManager.html
 K 25
 svn:wc:ra_dav:version-url
 V 116
 /repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/FileManager.html
+END
+Tokenizer.html
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/Tokenizer.html
 END
 LocationMapper.html
 K 25
@@ -63,29 +93,29 @@ svn:wc:ra_dav:version-url
 V 119
 /repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/LocationMapper.html
 END
-LocatorClassLoader.html
-K 25
-svn:wc:ra_dav:version-url
-V 123
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/LocatorClassLoader.html
-END
 Metadata.html
 K 25
 svn:wc:ra_dav:version-url
 V 113
 /repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/Metadata.html
 END
-package-frame.html
+LocatorClassLoader.html
 K 25
 svn:wc:ra_dav:version-url
-V 118
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/package-frame.html
+V 123
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/LocatorClassLoader.html
 END
 CollectionFactory.html
 K 25
 svn:wc:ra_dav:version-url
 V 122
 /repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/CollectionFactory.html
+END
+package-frame.html
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/package-frame.html
 END
 CharEncoding.html
 K 25
@@ -99,11 +129,11 @@ svn:wc:ra_dav:version-url
 V 116
 /repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/package-use.html
 END
-package-summary.html
+LocatorZip.html
 K 25
 svn:wc:ra_dav:version-url
-V 120
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/package-summary.html
+V 115
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/LocatorZip.html
 END
 LocatorURL.html
 K 25
@@ -111,11 +141,11 @@ svn:wc:ra_dav:version-url
 V 115
 /repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/LocatorURL.html
 END
-LocatorZip.html
+package-summary.html
 K 25
 svn:wc:ra_dav:version-url
-V 115
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/LocatorZip.html
+V 120
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/package-summary.html
 END
 package-tree.html
 K 25
@@ -128,34 +158,4 @@ K 25
 svn:wc:ra_dav:version-url
 V 114
 /repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/PrintUtil.html
-END
-URIref.html
-K 25
-svn:wc:ra_dav:version-url
-V 111
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/URIref.html
-END
-FileUtils.html
-K 25
-svn:wc:ra_dav:version-url
-V 114
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/FileUtils.html
-END
-TypedStream.html
-K 25
-svn:wc:ra_dav:version-url
-V 116
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/TypedStream.html
-END
-Locator.html
-K 25
-svn:wc:ra_dav:version-url
-V 112
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/Locator.html
-END
-LocatorFile.html
-K 25
-svn:wc:ra_dav:version-url
-V 116
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/util/LocatorFile.html
 END

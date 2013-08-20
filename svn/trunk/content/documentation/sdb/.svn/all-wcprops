@@ -3,24 +3,6 @@ svn:wc:ra_dav:version-url
 V 69
 /repos/asf/!svn/ver/1509999/jena/site/trunk/content/documentation/sdb
 END
-fuseki_integration.mdtext
-K 25
-svn:wc:ra_dav:version-url
-V 95
-/repos/asf/!svn/ver/1444706/jena/site/trunk/content/documentation/sdb/fuseki_integration.mdtext
-END
-quickstart.mdtext
-K 25
-svn:wc:ra_dav:version-url
-V 87
-/repos/asf/!svn/ver/1336579/jena/site/trunk/content/documentation/sdb/quickstart.mdtext
-END
-databases_supported.mdtext
-K 25
-svn:wc:ra_dav:version-url
-V 96
-/repos/asf/!svn/ver/1338462/jena/site/trunk/content/documentation/sdb/databases_supported.mdtext
-END
 db_notes.mdtext
 K 25
 svn:wc:ra_dav:version-url
@@ -98,4 +80,22 @@ K 25
 svn:wc:ra_dav:version-url
 V 96
 /repos/asf/!svn/ver/1336579/jena/site/trunk/content/documentation/sdb/dataset_description.mdtext
+END
+fuseki_integration.mdtext
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1444706/jena/site/trunk/content/documentation/sdb/fuseki_integration.mdtext
+END
+quickstart.mdtext
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1336579/jena/site/trunk/content/documentation/sdb/quickstart.mdtext
+END
+databases_supported.mdtext
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1338462/jena/site/trunk/content/documentation/sdb/databases_supported.mdtext
 END

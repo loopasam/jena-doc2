@@ -3,41 +3,29 @@ svn:wc:ra_dav:version-url
 V 110
 /repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode
 END
-SqlNode.html
+SqlNodeVisitorBase.html
 K 25
 svn:wc:ra_dav:version-url
-V 123
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlNode.html
+V 134
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlNodeVisitorBase.html
 END
-SqlJoinLeftOuter.html
-K 25
-svn:wc:ra_dav:version-url
-V 132
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlJoinLeftOuter.html
-END
-GenerateSQL_MS.html
-K 25
-svn:wc:ra_dav:version-url
-V 130
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/GenerateSQL_MS.html
-END
-GenerateSQL.html
-K 25
-svn:wc:ra_dav:version-url
-V 127
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/GenerateSQL.html
-END
-SqlRestrict.html
-K 25
-svn:wc:ra_dav:version-url
-V 127
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlRestrict.html
-END
-SqlNodeBase1.html
+SqlNodeBase0.html
 K 25
 svn:wc:ra_dav:version-url
 V 128
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlNodeBase1.html
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlNodeBase0.html
+END
+SqlTransformer.html
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlTransformer.html
+END
+SqlNodeBase2.html
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlNodeBase2.html
 END
 package-frame.html
 K 25
@@ -51,11 +39,77 @@ svn:wc:ra_dav:version-url
 V 127
 /repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/package-use.html
 END
+SqlNodeVisitor.html
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlNodeVisitor.html
+END
 package-summary.html
 K 25
 svn:wc:ra_dav:version-url
 V 131
 /repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/package-summary.html
+END
+SqlTransformCopy.html
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlTransformCopy.html
+END
+SqlProject.html
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlProject.html
+END
+GenerateSQLMySQL.html
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/GenerateSQLMySQL.html
+END
+GenerateSQLOracle.html
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/GenerateSQLOracle.html
+END
+GenerateSQLDB2.html
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/GenerateSQLDB2.html
+END
+GenerateSQL_MS.html
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/GenerateSQL_MS.html
+END
+SqlJoinLeftOuter.html
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlJoinLeftOuter.html
+END
+SqlNodeWalker.html
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlNodeWalker.html
+END
+SqlJoin.html
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlJoin.html
+END
+SqlNodeBase1.html
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlNodeBase1.html
 END
 ColAlias.html
 K 25
@@ -87,17 +141,29 @@ svn:wc:ra_dav:version-url
 V 128
 /repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlTransform.html
 END
+SqlCoalesce.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlCoalesce.html
+END
+SqlNodeBase.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlNodeBase.html
+END
 GenerateSQLDerby.html
 K 25
 svn:wc:ra_dav:version-url
 V 132
 /repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/GenerateSQLDerby.html
 END
-GenerateSQLOracle.html
+SqlNode.html
 K 25
 svn:wc:ra_dav:version-url
-V 133
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/GenerateSQLOracle.html
+V 123
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlNode.html
 END
 SqlTable.html
 K 25
@@ -111,6 +177,12 @@ svn:wc:ra_dav:version-url
 V 124
 /repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlUnion.html
 END
+GenerateSQL.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/GenerateSQL.html
+END
 SqlSelectBlock.html
 K 25
 svn:wc:ra_dav:version-url
@@ -123,87 +195,15 @@ svn:wc:ra_dav:version-url
 V 128
 /repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlJoinInner.html
 END
-SqlNodeWalker.html
+SqlRestrict.html
 K 25
 svn:wc:ra_dav:version-url
-V 129
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlNodeWalker.html
+V 127
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlRestrict.html
 END
 SqlSlice.html
 K 25
 svn:wc:ra_dav:version-url
 V 124
 /repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlSlice.html
-END
-SqlJoin.html
-K 25
-svn:wc:ra_dav:version-url
-V 123
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlJoin.html
-END
-SqlNodeVisitorBase.html
-K 25
-svn:wc:ra_dav:version-url
-V 134
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlNodeVisitorBase.html
-END
-SqlNodeBase0.html
-K 25
-svn:wc:ra_dav:version-url
-V 128
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlNodeBase0.html
-END
-SqlTransformer.html
-K 25
-svn:wc:ra_dav:version-url
-V 130
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlTransformer.html
-END
-SqlNodeBase2.html
-K 25
-svn:wc:ra_dav:version-url
-V 128
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlNodeBase2.html
-END
-SqlNodeVisitor.html
-K 25
-svn:wc:ra_dav:version-url
-V 130
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlNodeVisitor.html
-END
-SqlTransformCopy.html
-K 25
-svn:wc:ra_dav:version-url
-V 132
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlTransformCopy.html
-END
-SqlProject.html
-K 25
-svn:wc:ra_dav:version-url
-V 126
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlProject.html
-END
-SqlCoalesce.html
-K 25
-svn:wc:ra_dav:version-url
-V 127
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlCoalesce.html
-END
-SqlNodeBase.html
-K 25
-svn:wc:ra_dav:version-url
-V 127
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/SqlNodeBase.html
-END
-GenerateSQLMySQL.html
-K 25
-svn:wc:ra_dav:version-url
-V 132
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/GenerateSQLMySQL.html
-END
-GenerateSQLDB2.html
-K 25
-svn:wc:ra_dav:version-url
-V 130
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/core/sqlnode/GenerateSQLDB2.html
 END

@@ -3,6 +3,24 @@ svn:wc:ra_dav:version-url
 V 115
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/core/assembler
 END
+AssemblerUtils.html
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/core/assembler/AssemblerUtils.html
+END
+DatasetAssemblerVocab.html
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/core/assembler/DatasetAssemblerVocab.html
+END
+DatasetNullAssembler.html
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/core/assembler/DatasetNullAssembler.html
+END
 DatasetAssemblerException.html
 K 25
 svn:wc:ra_dav:version-url
@@ -50,22 +68,4 @@ K 25
 svn:wc:ra_dav:version-url
 V 140
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/core/assembler/GraphStoreAssembler.html
-END
-AssemblerUtils.html
-K 25
-svn:wc:ra_dav:version-url
-V 135
-/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/core/assembler/AssemblerUtils.html
-END
-DatasetAssemblerVocab.html
-K 25
-svn:wc:ra_dav:version-url
-V 142
-/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/core/assembler/DatasetAssemblerVocab.html
-END
-DatasetNullAssembler.html
-K 25
-svn:wc:ra_dav:version-url
-V 141
-/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/core/assembler/DatasetNullAssembler.html
 END

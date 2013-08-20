@@ -3,18 +3,6 @@ svn:wc:ra_dav:version-url
 V 116
 /repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/compiler/class-use
 END
-OpLibSDB.html
-K 25
-svn:wc:ra_dav:version-url
-V 130
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/compiler/class-use/OpLibSDB.html
-END
-OpSQL.html
-K 25
-svn:wc:ra_dav:version-url
-V 127
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/compiler/class-use/OpSQL.html
-END
 SqlStageBasicQuad.html
 K 25
 svn:wc:ra_dav:version-url
@@ -51,17 +39,17 @@ svn:wc:ra_dav:version-url
 V 131
 /repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/compiler/class-use/QuadBlock.html
 END
-QuadBlockCompilerMain.html
-K 25
-svn:wc:ra_dav:version-url
-V 143
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/compiler/class-use/QuadBlockCompilerMain.html
-END
 QueryCompilerMain.html
 K 25
 svn:wc:ra_dav:version-url
 V 139
 /repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/compiler/class-use/QueryCompilerMain.html
+END
+QuadBlockCompilerMain.html
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/compiler/class-use/QuadBlockCompilerMain.html
 END
 SqlBuilder.html
 K 25
@@ -134,4 +122,16 @@ K 25
 svn:wc:ra_dav:version-url
 V 128
 /repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/compiler/class-use/SDB_QC.html
+END
+OpLibSDB.html
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/compiler/class-use/OpLibSDB.html
+END
+OpSQL.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/compiler/class-use/OpSQL.html
 END

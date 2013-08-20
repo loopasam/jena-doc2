@@ -3,18 +3,6 @@ svn:wc:ra_dav:version-url
 V 68
 /repos/asf/!svn/ver/1483882/jena/site/trunk/content/documentation/io
 END
-rdf-json.html
-K 25
-svn:wc:ra_dav:version-url
-V 82
-/repos/asf/!svn/ver/1427439/jena/site/trunk/content/documentation/io/rdf-json.html
-END
-arp.mdtext
-K 25
-svn:wc:ra_dav:version-url
-V 79
-/repos/asf/!svn/ver/1462217/jena/site/trunk/content/documentation/io/arp.mdtext
-END
 index.mdtext
 K 25
 svn:wc:ra_dav:version-url
@@ -62,4 +50,16 @@ K 25
 svn:wc:ra_dav:version-url
 V 83
 /repos/asf/!svn/ver/1427439/jena/site/trunk/content/documentation/io/arp_sax.mdtext
+END
+rdf-json.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1427439/jena/site/trunk/content/documentation/io/rdf-json.html
+END
+arp.mdtext
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1462217/jena/site/trunk/content/documentation/io/arp.mdtext
 END

@@ -3,6 +3,42 @@ svn:wc:ra_dav:version-url
 V 110
 /repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/graph/class-use
 END
+Capabilities.html
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/graph/class-use/Capabilities.html
+END
+GraphExtract.html
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/graph/class-use/GraphExtract.html
+END
+Node_ANY.html
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/graph/class-use/Node_ANY.html
+END
+Node_Blank.html
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/graph/class-use/Node_Blank.html
+END
+GraphEventManager.html
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/graph/class-use/GraphEventManager.html
+END
+Triple.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/graph/class-use/Triple.html
+END
 Graph.html
 K 25
 svn:wc:ra_dav:version-url
@@ -57,17 +93,17 @@ svn:wc:ra_dav:version-url
 V 142
 /repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/graph/class-use/Node_Variable.VariableName.html
 END
-GraphMaker.html
-K 25
-svn:wc:ra_dav:version-url
-V 126
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/graph/class-use/GraphMaker.html
-END
 FrontsNode.html
 K 25
 svn:wc:ra_dav:version-url
 V 126
 /repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/graph/class-use/FrontsNode.html
+END
+GraphMaker.html
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/graph/class-use/GraphMaker.html
 END
 GraphEvents.html
 K 25
@@ -93,17 +129,17 @@ svn:wc:ra_dav:version-url
 V 133
 /repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/graph/class-use/BulkUpdateHandler.html
 END
-GetTriple.html
-K 25
-svn:wc:ra_dav:version-url
-V 125
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/graph/class-use/GetTriple.html
-END
 GraphUtil.html
 K 25
 svn:wc:ra_dav:version-url
 V 125
 /repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/graph/class-use/GraphUtil.html
+END
+GetTriple.html
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/graph/class-use/GetTriple.html
 END
 Node.NotLiteral.html
 K 25
@@ -182,40 +218,4 @@ K 25
 svn:wc:ra_dav:version-url
 V 135
 /repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/graph/class-use/TripleMatchIterator.html
-END
-Capabilities.html
-K 25
-svn:wc:ra_dav:version-url
-V 128
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/graph/class-use/Capabilities.html
-END
-GraphExtract.html
-K 25
-svn:wc:ra_dav:version-url
-V 128
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/graph/class-use/GraphExtract.html
-END
-Node_ANY.html
-K 25
-svn:wc:ra_dav:version-url
-V 124
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/graph/class-use/Node_ANY.html
-END
-Node_Blank.html
-K 25
-svn:wc:ra_dav:version-url
-V 126
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/graph/class-use/Node_Blank.html
-END
-GraphEventManager.html
-K 25
-svn:wc:ra_dav:version-url
-V 133
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/graph/class-use/GraphEventManager.html
-END
-Triple.html
-K 25
-svn:wc:ra_dav:version-url
-V 122
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/graph/class-use/Triple.html
 END

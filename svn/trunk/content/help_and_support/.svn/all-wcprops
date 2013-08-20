@@ -3,6 +3,12 @@ svn:wc:ra_dav:version-url
 V 68
 /repos/asf/!svn/ver/1346771/jena/site/trunk/content/help_and_support
 END
+bugs_and_suggestions.mdtext
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1336579/jena/site/trunk/content/help_and_support/bugs_and_suggestions.mdtext
+END
 faq.mdtext
 K 25
 svn:wc:ra_dav:version-url
@@ -14,10 +20,4 @@ K 25
 svn:wc:ra_dav:version-url
 V 81
 /repos/asf/!svn/ver/1346771/jena/site/trunk/content/help_and_support/index.mdtext
-END
-bugs_and_suggestions.mdtext
-K 25
-svn:wc:ra_dav:version-url
-V 96
-/repos/asf/!svn/ver/1336579/jena/site/trunk/content/help_and_support/bugs_and_suggestions.mdtext
 END

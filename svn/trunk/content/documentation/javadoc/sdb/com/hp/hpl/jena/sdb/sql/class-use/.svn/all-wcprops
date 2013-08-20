@@ -3,30 +3,6 @@ svn:wc:ra_dav:version-url
 V 111
 /repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/sql/class-use
 END
-SDBConnectionHolder.html
-K 25
-svn:wc:ra_dav:version-url
-V 136
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/sql/class-use/SDBConnectionHolder.html
-END
-SDBConnectionDesc.html
-K 25
-svn:wc:ra_dav:version-url
-V 134
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/sql/class-use/SDBConnectionDesc.html
-END
-SDBConnection.html
-K 25
-svn:wc:ra_dav:version-url
-V 130
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/sql/class-use/SDBConnection.html
-END
-FunctionsSQL.html
-K 25
-svn:wc:ra_dav:version-url
-V 129
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/sql/class-use/FunctionsSQL.html
-END
 SQLUtilsStd.html
 K 25
 svn:wc:ra_dav:version-url
@@ -98,4 +74,28 @@ K 25
 svn:wc:ra_dav:version-url
 V 119
 /repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/sql/class-use/RS.html
+END
+SDBConnectionHolder.html
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/sql/class-use/SDBConnectionHolder.html
+END
+SDBConnectionDesc.html
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/sql/class-use/SDBConnectionDesc.html
+END
+SDBConnection.html
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/sql/class-use/SDBConnection.html
+END
+FunctionsSQL.html
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/sql/class-use/FunctionsSQL.html
 END

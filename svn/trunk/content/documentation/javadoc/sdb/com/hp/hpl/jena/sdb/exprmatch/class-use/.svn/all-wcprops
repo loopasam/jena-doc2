@@ -3,18 +3,6 @@ svn:wc:ra_dav:version-url
 V 117
 /repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/exprmatch/class-use
 END
-MapAction.html
-K 25
-svn:wc:ra_dav:version-url
-V 132
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/exprmatch/class-use/MapAction.html
-END
-MapResult.html
-K 25
-svn:wc:ra_dav:version-url
-V 132
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/exprmatch/class-use/MapResult.html
-END
 ActionMatchExact.html
 K 25
 svn:wc:ra_dav:version-url
@@ -80,4 +68,16 @@ K 25
 svn:wc:ra_dav:version-url
 V 135
 /repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/exprmatch/class-use/ActionReject.html
+END
+MapAction.html
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/exprmatch/class-use/MapAction.html
+END
+MapResult.html
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/com/hp/hpl/jena/sdb/exprmatch/class-use/MapResult.html
 END

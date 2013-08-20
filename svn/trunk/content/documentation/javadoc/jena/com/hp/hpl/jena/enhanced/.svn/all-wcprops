@@ -3,6 +3,18 @@ svn:wc:ra_dav:version-url
 V 103
 /repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/enhanced
 END
+BuiltinPersonalities.html
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/enhanced/BuiltinPersonalities.html
+END
+Personality.html
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/enhanced/Personality.html
+END
 PersonalityConfigException.html
 K 25
 svn:wc:ra_dav:version-url
@@ -80,16 +92,4 @@ K 25
 svn:wc:ra_dav:version-url
 V 120
 /repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/enhanced/Polymorphic.html
-END
-BuiltinPersonalities.html
-K 25
-svn:wc:ra_dav:version-url
-V 129
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/enhanced/BuiltinPersonalities.html
-END
-Personality.html
-K 25
-svn:wc:ra_dav:version-url
-V 120
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/enhanced/Personality.html
 END

@@ -3,18 +3,6 @@ svn:wc:ra_dav:version-url
 V 77
 /repos/asf/!svn/ver/1494905/jena/site/trunk/content/documentation/javadoc/tdb
 END
-overview-summary.html
-K 25
-svn:wc:ra_dav:version-url
-V 99
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/tdb/overview-summary.html
-END
-package-list
-K 25
-svn:wc:ra_dav:version-url
-V 90
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/tdb/package-list
-END
 overview-tree.html
 K 25
 svn:wc:ra_dav:version-url
@@ -80,4 +68,16 @@ K 25
 svn:wc:ra_dav:version-url
 V 97
 /repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/tdb/overview-frame.html
+END
+overview-summary.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/tdb/overview-summary.html
+END
+package-list
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/tdb/package-list
 END

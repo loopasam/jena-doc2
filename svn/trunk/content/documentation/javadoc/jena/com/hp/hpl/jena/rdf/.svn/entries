@@ -1,7 +1,7 @@
 10
 
 dir
-1515238
+1515227
 http://svn.apache.org/repos/asf/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/rdf
 http://svn.apache.org/repos/asf
 
@@ -26,12 +26,12 @@ andy
 
 13f79535-47bb-0310-9956-ffa450edef68
 
+listeners
+dir
+
 model
 dir
 
 arp
-dir
-
-listeners
 dir
 

@@ -3,6 +3,24 @@ svn:wc:ra_dav:version-url
 V 117
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/riot/adapters/class-use
 END
+JenaReadersWriters.RDFReaderRIOT_NT.html
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/riot/adapters/class-use/JenaReadersWriters.RDFReaderRIOT_NT.html
+END
+JenaReadersWriters.html
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/riot/adapters/class-use/JenaReadersWriters.html
+END
+AdapterLocator.html
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/riot/adapters/class-use/AdapterLocator.html
+END
 RDFWriterRIOT.html
 K 25
 svn:wc:ra_dav:version-url
@@ -39,17 +57,17 @@ svn:wc:ra_dav:version-url
 V 162
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/riot/adapters/class-use/JenaReadersWriters.RDFReaderRIOT_RDFXML.html
 END
-AdapterFileManager.html
-K 25
-svn:wc:ra_dav:version-url
-V 141
-/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/riot/adapters/class-use/AdapterFileManager.html
-END
 JenaReadersWriters.RDFWriterRIOT_N3Triples.html
 K 25
 svn:wc:ra_dav:version-url
 V 165
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/riot/adapters/class-use/JenaReadersWriters.RDFWriterRIOT_N3Triples.html
+END
+AdapterFileManager.html
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/riot/adapters/class-use/AdapterFileManager.html
 END
 JenaReadersWriters.RDFWriterRIOT_N3TriplesAlt.html
 K 25
@@ -122,22 +140,4 @@ K 25
 svn:wc:ra_dav:version-url
 V 140
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/riot/adapters/class-use/RDFReaderRIOT_ARP.html
-END
-JenaReadersWriters.RDFReaderRIOT_NT.html
-K 25
-svn:wc:ra_dav:version-url
-V 158
-/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/riot/adapters/class-use/JenaReadersWriters.RDFReaderRIOT_NT.html
-END
-JenaReadersWriters.html
-K 25
-svn:wc:ra_dav:version-url
-V 141
-/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/riot/adapters/class-use/JenaReadersWriters.html
-END
-AdapterLocator.html
-K 25
-svn:wc:ra_dav:version-url
-V 137
-/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/apache/jena/riot/adapters/class-use/AdapterLocator.html
 END

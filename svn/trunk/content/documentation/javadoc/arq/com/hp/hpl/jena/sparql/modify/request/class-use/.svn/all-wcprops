@@ -3,6 +3,12 @@ svn:wc:ra_dav:version-url
 V 125
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/modify/request/class-use
 END
+QuadDataAccSink.html
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/modify/request/class-use/QuadDataAccSink.html
+END
 UpdateLoad.html
 K 25
 svn:wc:ra_dav:version-url
@@ -39,17 +45,17 @@ svn:wc:ra_dav:version-url
 V 142
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/modify/request/class-use/UpdateClear.html
 END
-UpdateDeleteInsert.html
-K 25
-svn:wc:ra_dav:version-url
-V 149
-/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/modify/request/class-use/UpdateDeleteInsert.html
-END
 UpdateModify.html
 K 25
 svn:wc:ra_dav:version-url
 V 143
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/modify/request/class-use/UpdateModify.html
+END
+UpdateDeleteInsert.html
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/modify/request/class-use/UpdateDeleteInsert.html
 END
 QuadDataAcc.html
 K 25
@@ -63,17 +69,17 @@ svn:wc:ra_dav:version-url
 V 140
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/modify/request/class-use/UpdateAdd.html
 END
-UpdateDataDelete.html
-K 25
-svn:wc:ra_dav:version-url
-V 147
-/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/modify/request/class-use/UpdateDataDelete.html
-END
 UpdateDataWriter.UpdateMode.html
 K 25
 svn:wc:ra_dav:version-url
 V 158
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/modify/request/class-use/UpdateDataWriter.UpdateMode.html
+END
+UpdateDataDelete.html
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/modify/request/class-use/UpdateDataDelete.html
 END
 UpdateDeleteWhere.html
 K 25
@@ -146,10 +152,4 @@ K 25
 svn:wc:ra_dav:version-url
 V 143
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/modify/request/class-use/UpdateWriter.html
-END
-QuadDataAccSink.html
-K 25
-svn:wc:ra_dav:version-url
-V 146
-/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/modify/request/class-use/QuadDataAccSink.html
 END

@@ -3,12 +3,6 @@ svn:wc:ra_dav:version-url
 V 125
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/expr/aggregate/class-use
 END
-AggNull.html
-K 25
-svn:wc:ra_dav:version-url
-V 138
-/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/expr/aggregate/class-use/AggNull.html
-END
 AggAvg.html
 K 25
 svn:wc:ra_dav:version-url
@@ -128,4 +122,10 @@ K 25
 svn:wc:ra_dav:version-url
 V 145
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/expr/aggregate/class-use/AggSumDistinct.html
+END
+AggNull.html
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/expr/aggregate/class-use/AggNull.html
 END

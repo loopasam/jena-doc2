@@ -1,7 +1,7 @@
 10
 
 dir
-1515238
+1515227
 http://svn.apache.org/repos/asf/jena/site/trunk/templates
 http://svn.apache.org/repos/asf
 
@@ -26,13 +26,47 @@ andy
 
 13f79535-47bb-0310-9956-ffa450edef68
 
+skeleton.html
+file
+
+
+
+
+2013-08-18T21:46:40.909323Z
+6cd84b4d27a39418737cfee56d274a1b
+2013-01-04T21:17:52.316320Z
+1429132
+andy
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2939
+
 sidenav.mdtext
 file
 
 
 
 
-2013-08-18T22:57:19.169217Z
+2013-08-18T21:46:40.909323Z
 40bf71e9e391e6f037f028bec0f260dd
 2013-06-07T14:32:22.026266Z
 1490664
@@ -66,7 +100,7 @@ file
 
 
 
-2013-08-18T22:57:19.169217Z
+2013-08-18T21:46:40.909323Z
 cdd815f8cf3adedb83fc04233a593712
 2011-01-12T00:07:58.928021Z
 1057945
@@ -93,38 +127,4 @@ has-props
 
 
 30
-
-skeleton.html
-file
-
-
-
-
-2013-08-18T22:57:19.169217Z
-6cd84b4d27a39418737cfee56d274a1b
-2013-01-04T21:17:52.316320Z
-1429132
-andy
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2939
 

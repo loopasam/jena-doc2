@@ -3,6 +3,12 @@ svn:wc:ra_dav:version-url
 V 91
 /repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/sdb/class-use
 END
+sdbscript.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/sdb/class-use/sdbscript.html
+END
 sdbconfig.html
 K 25
 svn:wc:ra_dav:version-url
@@ -80,10 +86,4 @@ K 25
 svn:wc:ra_dav:version-url
 V 103
 /repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/sdb/class-use/SDBCmd.html
-END
-sdbscript.html
-K 25
-svn:wc:ra_dav:version-url
-V 106
-/repos/asf/!svn/ver/1487848/jena/site/trunk/content/documentation/javadoc/sdb/sdb/class-use/sdbscript.html
 END

@@ -3,6 +3,30 @@ svn:wc:ra_dav:version-url
 V 95
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/openjena/riot
 END
+package-use.html
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/openjena/riot/package-use.html
+END
+package-summary.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/openjena/riot/package-summary.html
+END
+RiotParseException.html
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/openjena/riot/RiotParseException.html
+END
+package-tree.html
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/openjena/riot/package-tree.html
+END
 RiotNotFoundException.html
 K 25
 svn:wc:ra_dav:version-url
@@ -62,28 +86,4 @@ K 25
 svn:wc:ra_dav:version-url
 V 114
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/openjena/riot/package-frame.html
-END
-package-use.html
-K 25
-svn:wc:ra_dav:version-url
-V 112
-/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/openjena/riot/package-use.html
-END
-package-summary.html
-K 25
-svn:wc:ra_dav:version-url
-V 116
-/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/openjena/riot/package-summary.html
-END
-RiotParseException.html
-K 25
-svn:wc:ra_dav:version-url
-V 119
-/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/openjena/riot/RiotParseException.html
-END
-package-tree.html
-K 25
-svn:wc:ra_dav:version-url
-V 113
-/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/org/openjena/riot/package-tree.html
 END

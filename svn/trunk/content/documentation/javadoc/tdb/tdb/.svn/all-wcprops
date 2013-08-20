@@ -3,6 +3,12 @@ svn:wc:ra_dav:version-url
 V 81
 /repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/tdb/tdb
 END
+tdbloader.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/tdb/tdb/tdbloader.html
+END
 tdbupdate.html
 K 25
 svn:wc:ra_dav:version-url
@@ -86,10 +92,4 @@ K 25
 svn:wc:ra_dav:version-url
 V 96
 /repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/tdb/tdb/tdbbackup.html
-END
-tdbloader.html
-K 25
-svn:wc:ra_dav:version-url
-V 96
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/tdb/tdb/tdbloader.html
 END

@@ -3,30 +3,6 @@ svn:wc:ra_dav:version-url
 V 122
 /repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/reasoner/transitiveReasoner
 END
-package-summary.html
-K 25
-svn:wc:ra_dav:version-url
-V 143
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/reasoner/transitiveReasoner/package-summary.html
-END
-TransitiveInfGraph.html
-K 25
-svn:wc:ra_dav:version-url
-V 146
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/reasoner/transitiveReasoner/TransitiveInfGraph.html
-END
-TransitiveReasoner.html
-K 25
-svn:wc:ra_dav:version-url
-V 146
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/reasoner/transitiveReasoner/TransitiveReasoner.html
-END
-package-tree.html
-K 25
-svn:wc:ra_dav:version-url
-V 140
-/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/reasoner/transitiveReasoner/package-tree.html
-END
 TransitiveEngine.html
 K 25
 svn:wc:ra_dav:version-url
@@ -56,4 +32,28 @@ K 25
 svn:wc:ra_dav:version-url
 V 139
 /repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/reasoner/transitiveReasoner/package-use.html
+END
+package-summary.html
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/reasoner/transitiveReasoner/package-summary.html
+END
+TransitiveInfGraph.html
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/reasoner/transitiveReasoner/TransitiveInfGraph.html
+END
+TransitiveReasoner.html
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/reasoner/transitiveReasoner/TransitiveReasoner.html
+END
+package-tree.html
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1483439/jena/site/trunk/content/documentation/javadoc/jena/com/hp/hpl/jena/reasoner/transitiveReasoner/package-tree.html
 END

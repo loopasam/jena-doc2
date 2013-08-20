@@ -3,12 +3,6 @@ svn:wc:ra_dav:version-url
 V 122
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/engine/main/class-use
 END
-StageGeneratorGeneric.html
-K 25
-svn:wc:ra_dav:version-url
-V 149
-/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/engine/main/class-use/StageGeneratorGeneric.html
-END
 StageBuilder.html
 K 25
 svn:wc:ra_dav:version-url
@@ -68,4 +62,10 @@ K 25
 svn:wc:ra_dav:version-url
 V 145
 /repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/engine/main/class-use/OpExecutorFactory.html
+END
+StageGeneratorGeneric.html
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/asf/!svn/ver/1482787/jena/site/trunk/content/documentation/javadoc/arq/com/hp/hpl/jena/sparql/engine/main/class-use/StageGeneratorGeneric.html
 END
