@@ -1,8 +1,8 @@
 <div class="jumbotron centered">
 <div class="container">
-<img alt="Apache Jena" src="/images/jena-logo/jena-logo-small.png"/>
-<h1> Apache Jena</h1>
-<p class="lead">An open source Java framework for building <a href="http://www.w3.org/standards/semanticweb/">Semantic Web</a> and <a href="http://www.w3.org/standards/semanticweb/data">Linked Data</a> applications.</p>
+
+<h1><img alt="Apache Jena" src="/images/jena-logo/jena-logo-jumbotron.png"/> Apache Jena</h1>
+<p class="lead">A free and open source Java framework for building <a href="http://www.w3.org/standards/semanticweb/">Semantic Web</a> and <a href="http://www.w3.org/standards/semanticweb/data">Linked Data</a> applications.</p>
 <p>
 <a href="/getting_started/index.html" class="btn btn-primary btn-lg">Get started »</a>
 </p>
