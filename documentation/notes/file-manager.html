@@ -1,0 +1,244 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE- 2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+  <title>Apache Jena - The Jena FileManager and LocationMapper</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="/jena-doc2/css/bootstrap.css" rel="stylesheet" media="screen">
+  <link href="/jena-doc2/css/bootstrap-extension.css" rel="stylesheet" type="text/css">
+  
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="/jena-doc2/js/jena-navigation.js" type="text/javascript"></script>
+  <script src="/jena-doc2/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="/jena-doc2/js/breadcrumbs.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+
+
+<nav class="navbar navbar-default" role="navigation">
+<div class="container">
+  <div class="navbar-header">
+ 	<a class="navbar-brand" href="/jena-doc2/index.html">
+		<img class="logo-menu" src="/jena-doc2/images/jena-logo/jena-logo-notext-small.png" alt="jena logo">Apache Jena</a>
+  </div>
+  
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+
+
+
+              <li id="homepage"><a href="/jena-doc2/index.html"><span class="glyphicon glyphicon glyphicon-home"></span> Home</a></li>
+              <li id="download"><a href="/jena-doc2/download/index.html"><span class="glyphicon glyphicon-download-alt"></span> Download</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-book"></span> Learn <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header">Tutorials</li>
+                  <li><a href="/jena-doc2/tutorials/index.html">Overview</a></li>
+                  <li><a href="/jena-doc2/tutorials/rdf_api.html">RDF core API tutorial</a></li>
+                  <li><a href="/jena-doc2/tutorials/sparql.html">SPARQL tutorial</a></li>
+                  <li><a href="/jena-doc2/documentation/query/manipulating_sparql_using_arq.html">Manipulating SPARQL using ARQ</a></li>
+                  <li><a href="/jena-doc2/tutorials/using_jena_with_eclipse.html">Using Jena with Eclipse</a></li>
+                  <li><a href="/jena-doc2/documentation/notes/index.html">How-To's</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">References</li>
+                  <li><a href="/jena-doc2/documentation/index.html">Overview</a></li>
+                  <li><a href="/jena-doc2/documentation/javadoc/">Javadoc</a></li>
+                  <li><a href="/jena-doc2/documentation/rdf/index.html">RDF API</a></li>
+                  <li><a href="/jena-doc2/documentation/io/">RDF I/O</a></li>
+                  <li><a href="/jena-doc2/documentation/query/index.html">ARQ (SPARQL)</a></li>
+                  <li><a href="/jena-doc2/documentation/query/text-query.html">Text Search</a></li>
+                  <li><a href="/jena-doc2/documentation/tdb/index.html">TDB</a></li>
+                  <li><a href="/jena-doc2/documentation/sdb/index.html">SDB</a></li>
+                  <li><a href="/jena-doc2/documentation/serving_data/index.html">Fuseki</a></li>
+                  <li><a href="/jena-doc2/documentation/assembler/index.html">Assembler</a></li>
+                  <li><a href="/jena-doc2/documentation/ontology/">Ontology API</a></li>
+                  <li><a href="/jena-doc2/documentation/inference/index.html">Inference API</a></li>
+                  <li><a href="/jena-doc2/documentation/tools/index.html">Command-line tools</a></li>
+                </ul>
+              </li>
+              <li id="ask"><a href="/jena-doc2/help_and_support/index.html"><span class="glyphicon glyphicon-question-sign"></span> Ask</a></li>
+              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-bullhorn"></span> Get involved <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/jena-doc2/getting_involved/index.html">Contribute</a></li>
+                  <li><a href="/jena-doc2/help_and_support/bugs_and_suggestions.html">Report a bug</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Project</li>
+                  <li><a href="/jena-doc2/about_jena/about.html">About Jena</a></li>
+                  <li><a href="/jena-doc2/about_jena/roadmap.html">Roadmap</a></li>
+                  <li><a href="/jena-doc2/about_jena/architecture.html">Architecture</a></li>
+                  <li><a href="/jena-doc2/about_jena/team.html">Project team</a></li>
+                  <li><a href="/jena-doc2/about_jena/contributions.html">Related projects</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">ASF</li>
+                  <li><a href="http://www.apache.org/">Apache Software Foundation</a></li>
+                  <li><a href="http://www.apache.org/licenses/LICENSE-2.0">License</a></li>
+                  <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li>
+                  <li><a href="http://www.apache.org/foundation/sponsorship.html">Become a Sponsor</a></li>
+                  <li><a href="http://www.apache.org/security/">Security</a></li>
+                </ul>
+              </li>
+
+   
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+<div class="container">
+	<div class="row">
+	<div class="col-md-12">
+	<div id="breadcrumbs"></div>
+	<h1 class="title">The Jena FileManager and LocationMapper</h1>
+  <p>The FileManager is a utility to find and read files into models.
+There is a standard global FileManager and applications may also
+define specific ones by constructing addition FileManagers.</p>
+<p>The LocationMapper provides alternative locations for RDF data.</p>
+<h2 id="the-file-manager">The File Manager</h2>
+<p>Files are named by a string, according to the conventions of their
+storage system. Typically this is by URI. There are a number of
+storage system adapters provided:</p>
+<ul>
+<li>File locator (with own current directory)</li>
+<li>URL locator</li>
+<li>Class loader locator</li>
+<li>Zip file locator</li>
+</ul>
+<p>The global file manager has a file location, a URL locator and a
+class loader (tried in that order).
+A FileManager can have an associated LocationMapper that transforms
+names before use. This means local copies of documents can be used
+transparently to the rest of the application.</p>
+<p>There are two categories of operations: loadModel, readModel. Load
+operations fetch and parse the data into a new memory model. Read
+operations fetch and parse the data into an existing model. For
+more complex ways to create a new model see
+<a href="../assembler/index.html">the Assembler documentation</a>.</p>
+<p>Each FileManager has an optional in-memory cache of models. When
+on, loading models will look in the cache first and return a cached
+model if possible. This cached model is not copied - updates <em>will</em>
+change the cached version. The default is that cache is off.</p>
+<p>In fetching and parsing a file, the file manager will attempt to
+guess the serialization format, if not explicitly supplied. This is
+by name extension:</p>
+<ul>
+<li><code>.rdf</code> and <code>.owl</code> : RDF/XML</li>
+<li><code>.n3</code> : N3</li>
+<li><code>.nt</code> : N-Triples</li>
+<li>Anything else: RDF/XML</li>
+</ul>
+<h2 id="the-locationmapper-configuration-file">The LocationMapper configuration file</h2>
+<p>This example uses the RDF subset of
+<a href="http://www.w3.org/2000/10/swap/Primer">N3</a>. Jena has an RDF reader
+and RDF writer for N3. This is nearly the same as
+<a href="http://www.ilrt.bris.ac.uk/discovery/2004/01/turtle/">Turtle</a> but
+allowing international characters and some restrictions due to N3.</p>
+<p>Location mapping files are RDF - they may be written in RDF/XML, N3
+(file suffix <code>.n3</code>) or N-Triples (file suffix <code>.nt</code>). The default
+is RDF/XML unless one of these suffices is found.</p>
+<div class="codehilite"><pre><span class="err">@</span><span class="n">prefix</span> <span class="n">lm</span><span class="o">:</span> <span class="o">&lt;</span><span class="n">http</span><span class="o">:</span><span class="c1">//jena.hpl.hp.com/2004/08/location-mapping#&gt;</span>
+
+<span class="p">[]</span> <span class="n">lm</span><span class="o">:</span><span class="n">mapping</span>
+   <span class="p">[</span> <span class="n">lm</span><span class="o">:</span><span class="n">name</span> <span class="s">&quot;file:foo.n3&quot;</span> <span class="p">;</span>     <span class="n">lm</span><span class="o">:</span><span class="n">altName</span> <span class="s">&quot;file:etc/foo.n3&quot;</span> <span class="p">]</span> <span class="p">,</span>
+   <span class="p">[</span> <span class="n">lm</span><span class="o">:</span><span class="n">prefix</span> <span class="s">&quot;file:etc/&quot;</span> <span class="p">;</span>     <span class="n">lm</span><span class="o">:</span><span class="n">altPrefix</span> <span class="s">&quot;file:ETC/&quot;</span> <span class="p">]</span> <span class="p">,</span>
+   <span class="p">[</span> <span class="n">lm</span><span class="o">:</span><span class="n">name</span> <span class="s">&quot;file:etc/foo.n3&quot;</span> <span class="p">;</span> <span class="n">lm</span><span class="o">:</span><span class="n">altName</span> <span class="s">&quot;file:DIR/foo.n3&quot;</span> <span class="p">]</span>
+   <span class="p">.</span>
+</pre></div>
+
+
+<p>There are two types of location mapping: exact match renaming and
+prefix renaming. When trying to find an alternative location, a
+LocationMapper first tries for an exact match; if none is found,
+the LocationMapper will search for the longest matching prefix. If
+two are the same length, there is no guarantee on order tried;
+there is no implied order in a location mapper configuration file
+(it sets up two hash tables).</p>
+<p>In the example above, <code>file:etc/foo.n3</code> becomes <code>file:DIR/foo.n3</code>
+because that is an exact match. The prefix match of file:/etc/ is
+ignored.</p>
+<p>All string tests are done case sensitively because the primary use
+is for URLs.</p>
+<p>Notes:</p>
+<ul>
+<li>Property values are not URIs, but strings. This is a system
+    feature, not an RDF feature. Prefix mapping is name rewriting;
+    alternate names are not treated as equivalent resources in the rest
+    of Jena. While application writers are encouraged to use URIs to
+    identify files, this is not always possible.</li>
+<li>There is no check to see if the alternative system resource is
+    equivalent to the original.</li>
+</ul>
+<p>A LocationMapper finds its configuration file by looking for the
+following files, in order:</p>
+<ul>
+<li><code>file:location-mapping.rdf</code></li>
+<li><code>file:location-mapping.n3</code></li>
+<li><code>file:etc/location-mapping.rdf</code></li>
+<li><code>file:etc/location-mapping.n3</code></li>
+</ul>
+<p>This is a specified as a path - note the path separator is always
+the character ';' regardless of operating system because URLs
+contain ':'.</p>
+<p>Applications can also set mappings programmatically. No
+configuration file is necessary.</p>
+<p>The base URI for reading models with the FileManager will be the
+original URI, not the alternative location.</p>
+<h3 id="debugging">Debugging</h3>
+<p>Using log4j, set the logging level of the classes:
+    com.hp.hpl.jena.util.FileManager=ALL
+    com.hp.hpl.jena.util.LocationManager=ALL</p>
+<h3 id="see-also">See also</h3>
+<p>Javadoc:
+<a href="/jena-doc2/documentation/javadoc/jena/com/hp/hpl/jena/util/FileManager.html">FileManager</a>
+<a href="/jena-doc2/documentation/javadoc/jena/com/hp/hpl/jena/util/LocationMapper.html">LocationMapper</a></p>
+  </div>
+</div>
+
+</div><!--/.container -->
+
+    <footer class="footer">
+      <div class="container">
+        <p>Copyright &copy; 2011&ndash;2013 The Apache Software Foundation, Licensed under
+        the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.
+        </p>
+        <p>
+        Apache Jena, Jena, the Apache Jena project logo,
+        Apache and the Apache feather logos are trademarks of The Apache Software Foundation.
+        </p>
+      </div>
+  </footer>
+      
+
+</body>
+</html>
