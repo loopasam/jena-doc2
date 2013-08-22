@@ -1,0 +1,273 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE- 2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+  <title>Apache Jena - TDB Command-line Utilities</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="/jena-doc2/css/bootstrap.css" rel="stylesheet" media="screen">
+  <link href="/jena-doc2/css/bootstrap-extension.css" rel="stylesheet" type="text/css">
+  
+  <script src="/jena-doc2//code.jquery.com/jquery.js"></script>
+  <script src="/jena-doc2/js/jena-navigation.js" type="text/javascript"></script>
+  <script src="/jena-doc2/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="/jena-doc2/js/breadcrumbs.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+
+
+<nav class="navbar navbar-default" role="navigation">
+<div class="container">
+  <div class="navbar-header">
+ 	<a class="navbar-brand" href="/jena-doc2/index.html">
+		<img class="logo-menu" src="/jena-doc2/images/jena-logo/jena-logo-notext-small.png" alt="jena logo">Apache Jena</a>
+  </div>
+  
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+
+
+
+              <li id="homepage"><a href="/jena-doc2/index.html"><span class="glyphicon glyphicon glyphicon-home"></span> Home</a></li>
+              <li id="download"><a href="/jena-doc2/download/index.html"><span class="glyphicon glyphicon-download-alt"></span> Download</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-book"></span> Learn <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header">Tutorials</li>
+                  <li><a href="/jena-doc2/tutorials/index.html">Overview</a></li>
+                  <li><a href="/jena-doc2/tutorials/rdf_api.html">RDF core API tutorial</a></li>
+                  <li><a href="/jena-doc2/tutorials/sparql.html">SPARQL tutorial</a></li>
+                  <li><a href="/jena-doc2/documentation/query/manipulating_sparql_using_arq.html">Manipulating SPARQL using ARQ</a></li>
+                  <li><a href="/jena-doc2/tutorials/using_jena_with_eclipse.html">Using Jena with Eclipse</a></li>
+                  <li><a href="/jena-doc2/documentation/notes/index.html">How-To's</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">References</li>
+                  <li><a href="/jena-doc2/documentation/index.html">Overview</a></li>
+                  <li><a href="/jena-doc2/documentation/javadoc/">Javadoc</a></li>
+                  <li><a href="/jena-doc2/documentation/rdf/index.html">RDF API</a></li>
+                  <li><a href="/jena-doc2/documentation/io/">RDF I/O</a></li>
+                  <li><a href="/jena-doc2/documentation/query/index.html">ARQ (SPARQL)</a></li>
+                  <li><a href="/jena-doc2/documentation/query/text-query.html">Text Search</a></li>
+                  <li><a href="/jena-doc2/documentation/tdb/index.html">TDB</a></li>
+                  <li><a href="/jena-doc2/documentation/sdb/index.html">SDB</a></li>
+                  <li><a href="/jena-doc2/documentation/serving_data/index.html">Fuseki</a></li>
+                  <li><a href="/jena-doc2/documentation/assembler/index.html">Assembler</a></li>
+                  <li><a href="/jena-doc2/documentation/ontology/">Ontology API</a></li>
+                  <li><a href="/jena-doc2/documentation/inference/index.html">Inference API</a></li>
+                  <li><a href="/jena-doc2/documentation/tools/index.html">Command-line tools</a></li>
+                </ul>
+              </li>
+              <li id="ask"><a href="/jena-doc2/help_and_support/index.html"><span class="glyphicon glyphicon-question-sign"></span> Ask</a></li>
+              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-bullhorn"></span> Get involved <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/jena-doc2/getting_involved/index.html">Contribute</a></li>
+                  <li><a href="/jena-doc2/help_and_support/bugs_and_suggestions.html">Report a bug</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Project</li>
+                  <li><a href="/jena-doc2/about_jena/about.html">About Jena</a></li>
+                  <li><a href="/jena-doc2/about_jena/roadmap.html">Roadmap</a></li>
+                  <li><a href="/jena-doc2/about_jena/architecture.html">Architecture</a></li>
+                  <li><a href="/jena-doc2/about_jena/team.html">Project team</a></li>
+                  <li><a href="/jena-doc2/about_jena/contributions.html">Related projects</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">ASF</li>
+                  <li><a href="http://www.apache.org/">Apache Software Foundation</a></li>
+                  <li><a href="http://www.apache.org/licenses/LICENSE-2.0">License</a></li>
+                  <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li>
+                  <li><a href="http://www.apache.org/foundation/sponsorship.html">Become a Sponsor</a></li>
+                  <li><a href="http://www.apache.org/security/">Security</a></li>
+                </ul>
+              </li>
+
+   
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+<div class="container">
+	<div class="row">
+	<div class="col-md-12">
+	<div id="breadcrumbs"></div>
+	<h1 class="title">TDB Command-line Utilities</h1>
+  <h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#scripts">Scripts</a><ul>
+<li><a href="#script-set-up-bash-scripts">Script set up - bash scripts</a></li>
+<li><a href="#script-set-up-windows-bash-files">Script set up - Windows batch files</a></li>
+</ul>
+</li>
+<li><a href="#command-line-script-arguments">Command line script arguments</a><ul>
+<li><a href="#setting-options-from-the-command-line">Setting options from the command line</a></li>
+</ul>
+</li>
+<li><a href="#tdb-commands">TDB Commands</a><ul>
+<li><a href="#store-description">Store description</a></li>
+<li><a href="#tdbloader">tdbloader</a></li>
+<li><a href="#tdbloader2">tdbloader2</a></li>
+<li><a href="#tdbquery">tdbquery</a></li>
+<li><a href="#tdbdump">tdbdump</a></li>
+<li><a href="#tdbstats">tdbstats</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>From Apache Jena version <code>2.7.x</code> onwards, TDB is now installed as part of a single integrated Jena
+package. There is no longer a need to install a separate TDB package to run the TDB command line
+tools, or to use TDB in your Java programs. See the <a href="/jena-doc2/download/">downloads</a> page for details on getting the latest Jena
+release.</p>
+<h2 id="scripts">Scripts</h2>
+<p>From the location The directory <code>bin/</code> contains shell scripts to run the commands
+from the command line. The scripts are bash scripts which should work
+on Linux systems, Windows systems using <a href="http://www.cygwin.com/">Cygwin</a> and
+Mac/OS systems. The directory <code>bat/</code> contains Windows batch files which
+provide the same functionality for Windows systems that are not using
+Cygwin.</p>
+<h3 id="script-set-up-bash-scripts">Script set up - bash scripts</h3>
+<p>Set the environment variable <code>JENAROOT</code> to the root of the the Jena
+installation. E.g:</p>
+<div class="codehilite"><pre><span class="n">export</span> <span class="n">JENAROOT</span><span class="o">=/</span><span class="n">home</span><span class="o">/</span><span class="n">somebody</span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">apache</span><span class="o">-</span><span class="n">jena</span>
+</pre></div>
+
+
+<p>or</p>
+<div class="codehilite"><pre><span class="n">export</span> <span class="n">JENAROOT</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">apache</span><span class="o">-</span><span class="n">jena</span>
+</pre></div>
+
+
+<p>Then set the <code>PATH</code> to include the <code>bin</code> directory:</p>
+<div class="codehilite"><pre><span class="n">PATH</span><span class="o">=</span><span class="err">$</span><span class="n">JENAROOT</span><span class="o">/</span><span class="n">bin</span><span class="o">:</span><span class="err">$</span><span class="n">PATH</span>
+</pre></div>
+
+
+<p>This can be done in <code>.bashrc</code>, or its equivalent on Mac OS/X, to ensure that the environment
+variables are always available.</p>
+<h3 id="script-set-up-windows-batch-files">Script set up - Windows batch files</h3>
+<p>Setting environment variables in Windows is slightly involved. You can set them
+each time you start a command prompt:</p>
+<div class="codehilite"><pre><span class="n">SET</span> <span class="n">JENAROOT</span><span class="o">=</span><span class="err">\</span><span class="n">Users</span><span class="err">\</span><span class="n">somebody</span><span class="err">\</span><span class="n">dev</span><span class="err">\</span><span class="n">apache</span><span class="o">-</span><span class="n">jena</span>
+<span class="n">SET</span> <span class="n">PATH</span><span class="o">=%</span><span class="n">PATH</span><span class="o">%</span><span class="p">;</span><span class="o">%</span><span class="n">JENAROOT</span><span class="err">\</span><span class="n">bin</span>
+</pre></div>
+
+
+<p>or you can follow <a href="http://searchsystemschannel.techtarget.com/feature/Setting-Windows-7-environment-variables">this guide</a>
+or one like it to set the environment variables so that they are available every
+time you launch the command prompt.</p>
+<h2 id="command-line-script-arguments">Command line script arguments</h2>
+<p>Each command then has command-specific arguments described below.</p>
+<p>All commands support <code>--help</code> to give details of named and
+positional arguments.</p>
+<p>There are two equivalent forms of named argument syntax:</p>
+<div class="codehilite"><pre><span class="o">--</span><span class="n">arg</span><span class="o">=</span><span class="n">val</span>
+
+<span class="o">--</span><span class="n">arg</span> <span class="n">val</span>
+</pre></div>
+
+
+<h3 id="setting-options-from-the-command-line">Setting options from the command line</h3>
+<p>TDB has a number of
+<a href="configuration.html">configuration options</a>
+which can be set from the command line using:</p>
+<div class="codehilite"><pre> <span class="o">--</span><span class="n">set</span> <span class="n">tdb</span><span class="o">:</span><span class="n">symbol</span><span class="o">=</span><span class="n">value</span>
+</pre></div>
+
+
+<p>Using tdb: is really a short hand for the URI prefix
+http://jena.hpl.hp.com/TDB# so the full URI form is</p>
+<div class="codehilite"><pre> <span class="o">--</span><span class="n">set</span> <span class="n">http</span><span class="o">:</span><span class="c1">//jena.hpl.hp.com/TDB#symbol=value</span>
+</pre></div>
+
+
+<h2 id="tdb-commands">TDB Commands</h2>
+<h3 id="store-description">Store description</h3>
+<p>TDB commands use an assembler description for the persistent store</p>
+<div class="codehilite"><pre><span class="o">--</span><span class="n">desc</span><span class="o">=</span><span class="n">assembler</span><span class="p">.</span><span class="n">ttl</span>
+<span class="o">--</span><span class="n">tdb</span><span class="o">=</span><span class="n">assembler</span><span class="p">.</span><span class="n">ttl</span>
+</pre></div>
+
+
+<p>or a direct reference to the directory with the index and node
+files:</p>
+<div class="codehilite"><pre><span class="o">--</span><span class="n">loc</span><span class="o">=</span><span class="n">DIRECTORY</span>
+<span class="o">--</span><span class="n">location</span><span class="o">=</span><span class="n">DIRECTORY</span>
+</pre></div>
+
+
+<p>The assembler description follow the form for a dataset given in
+<a href="assembler.html" title="TDB/Assembler">TDB assembler description</a> page.</p>
+<p>If neither assembler file nor location is given, <code>--desc=tdb.ttl</code>
+is assumed.</p>
+<h3 id="tdbloader"><code>tdbloader</code></h3>
+<p>Bulk loader and index builder. Performans bulk load operations more
+efficiently than simply reading RDF into a TDB-back model.</p>
+<h3 id="tdbloader2"><code>tdbloader2</code></h3>
+<p>Bulk loader and index builder. Faster than <code>tdbloader</code> but only works
+on Linux and Mac OS/X since it relies on some Unix system utilities.</p>
+<p>This bulk loader can only be used to create a database. It may
+overwrite existing data. It only accepts the --loc argument and a
+list of files to load.</p>
+<h3 id="tdbquery"><code>tdbquery</code></h3>
+<p>Invoke a SPARQL query on a store. Use <code>--time</code> for timing
+information. The store is attached on each run of this command so
+timing includes some overhead not present in a running system.</p>
+<p>Details about query execution can be obtained -- see notes on the
+<a href="optimizer.html#Investigating_what_is_going_on">TDB Optimizer</a>.</p>
+<h3 id="tdbdump"><code>tdbdump</code></h3>
+<p>Dump the store in
+<a href="http://sw.deri.org/2008/07/n-quads/">N-Quads</a>
+format.</p>
+<h3 id="tdbstats">tdbstats</h3>
+<p>Produce a statistics for the dataset. See the
+<a href="optimizer.html#Statistics_Rule_File">TDB Optimizer description.</a>.</p>
+  </div>
+</div>
+
+</div><!--/.container -->
+
+    <footer class="footer">
+      <div class="container">
+        <p>Copyright &copy; 2011&ndash;2013 The Apache Software Foundation, Licensed under
+        the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.
+        </p>
+        <p>
+        Apache Jena, Jena, the Apache Jena project logo,
+        Apache and the Apache feather logos are trademarks of The Apache Software Foundation.
+        </p>
+      </div>
+  </footer>
+      
+
+</body>
+</html>

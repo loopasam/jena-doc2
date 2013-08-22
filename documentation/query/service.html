@@ -1,0 +1,268 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE- 2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+  <title>Apache Jena - ARQ - Basic Federated SPARQL Query</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="/jena-doc2/css/bootstrap.css" rel="stylesheet" media="screen">
+  <link href="/jena-doc2/css/bootstrap-extension.css" rel="stylesheet" type="text/css">
+  
+  <script src="/jena-doc2//code.jquery.com/jquery.js"></script>
+  <script src="/jena-doc2/js/jena-navigation.js" type="text/javascript"></script>
+  <script src="/jena-doc2/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="/jena-doc2/js/breadcrumbs.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+
+
+<nav class="navbar navbar-default" role="navigation">
+<div class="container">
+  <div class="navbar-header">
+ 	<a class="navbar-brand" href="/jena-doc2/index.html">
+		<img class="logo-menu" src="/jena-doc2/images/jena-logo/jena-logo-notext-small.png" alt="jena logo">Apache Jena</a>
+  </div>
+  
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+
+
+
+              <li id="homepage"><a href="/jena-doc2/index.html"><span class="glyphicon glyphicon glyphicon-home"></span> Home</a></li>
+              <li id="download"><a href="/jena-doc2/download/index.html"><span class="glyphicon glyphicon-download-alt"></span> Download</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-book"></span> Learn <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header">Tutorials</li>
+                  <li><a href="/jena-doc2/tutorials/index.html">Overview</a></li>
+                  <li><a href="/jena-doc2/tutorials/rdf_api.html">RDF core API tutorial</a></li>
+                  <li><a href="/jena-doc2/tutorials/sparql.html">SPARQL tutorial</a></li>
+                  <li><a href="/jena-doc2/documentation/query/manipulating_sparql_using_arq.html">Manipulating SPARQL using ARQ</a></li>
+                  <li><a href="/jena-doc2/tutorials/using_jena_with_eclipse.html">Using Jena with Eclipse</a></li>
+                  <li><a href="/jena-doc2/documentation/notes/index.html">How-To's</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">References</li>
+                  <li><a href="/jena-doc2/documentation/index.html">Overview</a></li>
+                  <li><a href="/jena-doc2/documentation/javadoc/">Javadoc</a></li>
+                  <li><a href="/jena-doc2/documentation/rdf/index.html">RDF API</a></li>
+                  <li><a href="/jena-doc2/documentation/io/">RDF I/O</a></li>
+                  <li><a href="/jena-doc2/documentation/query/index.html">ARQ (SPARQL)</a></li>
+                  <li><a href="/jena-doc2/documentation/query/text-query.html">Text Search</a></li>
+                  <li><a href="/jena-doc2/documentation/tdb/index.html">TDB</a></li>
+                  <li><a href="/jena-doc2/documentation/sdb/index.html">SDB</a></li>
+                  <li><a href="/jena-doc2/documentation/serving_data/index.html">Fuseki</a></li>
+                  <li><a href="/jena-doc2/documentation/assembler/index.html">Assembler</a></li>
+                  <li><a href="/jena-doc2/documentation/ontology/">Ontology API</a></li>
+                  <li><a href="/jena-doc2/documentation/inference/index.html">Inference API</a></li>
+                  <li><a href="/jena-doc2/documentation/tools/index.html">Command-line tools</a></li>
+                </ul>
+              </li>
+              <li id="ask"><a href="/jena-doc2/help_and_support/index.html"><span class="glyphicon glyphicon-question-sign"></span> Ask</a></li>
+              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-bullhorn"></span> Get involved <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/jena-doc2/getting_involved/index.html">Contribute</a></li>
+                  <li><a href="/jena-doc2/help_and_support/bugs_and_suggestions.html">Report a bug</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Project</li>
+                  <li><a href="/jena-doc2/about_jena/about.html">About Jena</a></li>
+                  <li><a href="/jena-doc2/about_jena/roadmap.html">Roadmap</a></li>
+                  <li><a href="/jena-doc2/about_jena/architecture.html">Architecture</a></li>
+                  <li><a href="/jena-doc2/about_jena/team.html">Project team</a></li>
+                  <li><a href="/jena-doc2/about_jena/contributions.html">Related projects</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">ASF</li>
+                  <li><a href="http://www.apache.org/">Apache Software Foundation</a></li>
+                  <li><a href="http://www.apache.org/licenses/LICENSE-2.0">License</a></li>
+                  <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li>
+                  <li><a href="http://www.apache.org/foundation/sponsorship.html">Become a Sponsor</a></li>
+                  <li><a href="http://www.apache.org/security/">Security</a></li>
+                </ul>
+              </li>
+
+   
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+<div class="container">
+	<div class="row">
+	<div class="col-md-12">
+	<div id="breadcrumbs"></div>
+	<h1 class="title">ARQ - Basic Federated SPARQL Query</h1>
+  <p>There are already ways to access remote RDF data. The simplest is
+to read a document which is an RDF graph and query it. Another way
+is with the
+<a href="http://www.w3.org/TR/rdf-sparql-protocol/">SPARQL protocol</a> which
+allows a query to be sent to a remote service endpoint and the
+results sent back (in RDF, or an
+<a href="http://www.w3.org/TR/rdf-sparql-XMLres/">XML-based results format</a>
+or even a <a href="http://www.w3.org/TR/rdf-sparql-json-res/">JSON one</a>).</p>
+<p>The SERVICE extension adds the ability to make SPARQL protocol
+calls within a query, not just send the whole query to the remote
+service.</p>
+<p>This involves is a syntactic extension and is available if the
+query is parsed with language <code>Syntax.syntaxARQ</code>.</p>
+<h2 id="syntax">Syntax</h2>
+<p>A new keyword <code>SERVICE</code> is added to the extended SPARQL query
+language in ARQ. This keyword causes the sub-pattern to be sent to
+a named SPARQL service endpoint, and not matched against a local
+graph.</p>
+<div class="codehilite"><pre><span class="n">PREFIX</span> <span class="o">:</span> <span class="o">&lt;</span><span class="n">http</span><span class="o">:</span><span class="c1">//example/&gt;</span>
+<span class="n">PREFIX</span>  <span class="n">dc</span><span class="o">:</span>     <span class="o">&lt;</span><span class="n">http</span><span class="o">:</span><span class="c1">//purl.org/dc/elements/1.1/&gt;</span>
+
+<span class="n">SELECT</span> <span class="o">?</span><span class="n">a</span>
+<span class="n">FROM</span> <span class="o">&lt;</span><span class="n">mybooks</span><span class="p">.</span><span class="n">rdf</span><span class="o">&gt;</span>
+<span class="p">{</span>
+  <span class="o">?</span><span class="n">b</span> <span class="n">dc</span><span class="o">:</span><span class="n">title</span> <span class="o">?</span><span class="n">title</span> <span class="p">.</span>
+  <span class="n">SERVICE</span> <span class="o">&lt;</span><span class="n">http</span><span class="o">:</span><span class="c1">//sparql.org/books&gt;</span>
+     <span class="p">{</span> <span class="o">?</span><span class="n">s</span> <span class="n">dc</span><span class="o">:</span><span class="n">title</span> <span class="o">?</span><span class="n">title</span> <span class="p">.</span> <span class="o">?</span><span class="n">s</span> <span class="n">dc</span><span class="o">:</span><span class="n">creator</span> <span class="o">?</span><span class="n">a</span> <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h2 id="algebra">Algebra</h2>
+<p>There is a new operator in the algebra.</p>
+<div class="codehilite"><pre><span class="p">(</span><span class="n">prefix</span> <span class="p">((</span><span class="n">dc</span><span class="o">:</span> <span class="o">&lt;</span><span class="n">http</span><span class="o">:</span><span class="c1">//purl.org/dc/elements/1.1/&gt;))</span>
+  <span class="p">(</span><span class="n">project</span> <span class="p">(</span><span class="o">?</span><span class="n">a</span><span class="p">)</span>
+    <span class="p">(</span><span class="n">join</span>
+      <span class="p">(</span><span class="n">BGP</span> <span class="p">[</span><span class="n">triple</span> <span class="o">?</span><span class="n">b</span> <span class="n">dc</span><span class="o">:</span><span class="n">title</span> <span class="o">?</span><span class="n">title</span><span class="p">])</span>
+      <span class="p">(</span><span class="n">service</span> <span class="o">&lt;</span><span class="n">http</span><span class="o">:</span><span class="c1">//sparql.org/books&gt;</span>
+          <span class="p">(</span><span class="n">BGP</span>
+            <span class="p">[</span><span class="n">triple</span> <span class="o">?</span><span class="n">s</span> <span class="n">dc</span><span class="o">:</span><span class="n">title</span> <span class="o">?</span><span class="n">title</span><span class="p">]</span>
+            <span class="p">[</span><span class="n">triple</span> <span class="o">?</span><span class="n">s</span> <span class="n">dc</span><span class="o">:</span><span class="n">creator</span> <span class="o">?</span><span class="n">a</span><span class="p">]</span>
+          <span class="p">))</span>
+      <span class="p">)))</span>
+</pre></div>
+
+
+<h2 id="performance-considerations">Performance Considerations</h2>
+<p>This feature is a basic building block to allow remote access in
+the middle of a query, not a general solution to the issues in
+distributed query evaluation. The algebra operation is executed
+without regard to how selective the pattern is. So the order of the
+query will affect the speed of execution. Because it involves HTTP
+operations, asking the query in the right order matters a lot.
+Don't ask for the whole of a bookstore just to find book whose
+title comes from a local RDF file - ask the bookshop a query with
+the title already bound from earlier in the query.</p>
+<h2 id="controlling-service-requests">Controlling <code>SERVICE</code> requests.</h2>
+<p>The <code>SERVICE</code> operation in a SPARQL query may be configured via the Context.
+The values for configuration can be set in the global context (accessed via 
+<code>ARQ.getCOntext()</code>) or in the per-query execution context.</p>
+<p>The prefix  <code>srv:</code> is the IRI <code>&lt;http://jena.hpl.hp.com/Service#&gt;</code>.</p>
+<h3 id="summary">Summary</h3>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>srv:queryTimeout</code></td>
+<td>Set timeouts</td>
+</tr>
+<tr>
+<td><code>srv:queryGzip</code></td>
+<td>Enable use of GZip</td>
+</tr>
+<tr>
+<td><code>srv:queryDeflate</code></td>
+<td>Enable use of deflate</td>
+</tr>
+<tr>
+<td><code>srv:queryAuthUser</code></td>
+<td>Basic authentication</td>
+</tr>
+<tr>
+<td><code>srv:queryAuthPwd</code></td>
+<td>Basic authentication</td>
+</tr>
+<tr>
+<td><code>srv:queryContext</code></td>
+<td>Per-endpoint configuration</td>
+</tr>
+</tbody>
+</table>
+<h3 id="srvquerytimeout"><code>srv:queryTimeout</code></h3>
+<p>Set the connect and read timeouts for the query.</p>
+<p>If a timeout occurs a QueryExceptionHTTP is thrown.  The cause of that execption will be a java.net.SocketTimeoutException.</p>
+<p>Number: number of milliseconds for connect timeout.</p>
+<p>String: number of milliseconds for connect timeout.  If string is of the form “X,Y” the first number is the numbr of milliseconds for the connect timeout and the seconds is the number of milliseconds for the read timeout.</p>
+<p>Connect timeout =0
+read timout = 0</p>
+<p>Values of 0 indicate no timeout and service operation will wait until the remote server responds.</p>
+<h3 id="srvquerygzip"><code>srv:queryGzip</code></h3>
+<p>Sets the allow Gzip flag.</p>
+<p>Boolean: True indicates that gzip compressed data is acceptable.
+false</p>
+<h3 id="srvquerydeflate"><code>srv:queryDeflate</code></h3>
+<p>Sets the allow Deflate flag.</p>
+<p>Boolean: True indicates that deflate compression is acceptable
+False</p>
+<h3 id="srvqueryauthuser"><code>srv:queryAuthUser</code></h3>
+<p>Sets the user id for basic auth.</p>
+<p>String: The user id to log in with</p>
+<p>If null or null length no user id is sent.</p>
+<h3 id="srvqueryauthpwd"><code>srv:queryAuthPwd</code></h3>
+<p>Sets the password for basic auth.</p>
+<p>String: The password to log in with.</p>
+<p>If null or null length no password is sent.</p>
+<h3 id="srvservicecontext">srv:serviceContext</h3>
+<p>Provides a mechanism to override system context settings on a per URI basis.</p>
+<p>The value is a <code>Map&lt;String,Context&gt;</code> where the map key is the URI of the service endpoint, and the <code>Context</code> is a set of values to override the default values.</p>
+<p>If a context is provided for the URI the system context is copied and the URI specific values are then copied in.  This ensures that any URI specific settings will be used.</p>
+<p><a href="index.html">ARQ documentation index</a></p>
+  </div>
+</div>
+
+</div><!--/.container -->
+
+    <footer class="footer">
+      <div class="container">
+        <p>Copyright &copy; 2011&ndash;2013 The Apache Software Foundation, Licensed under
+        the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.
+        </p>
+        <p>
+        Apache Jena, Jena, the Apache Jena project logo,
+        Apache and the Apache feather logos are trademarks of The Apache Software Foundation.
+        </p>
+      </div>
+  </footer>
+      
+
+</body>
+</html>

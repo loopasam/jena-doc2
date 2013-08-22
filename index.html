@@ -1,79 +1,187 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+<head>
+<!--
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Jena-doc2 : Some experiments with the Jena website" />
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+       http://www.apache.org/licenses/LICENSE- 2.0
 
-    <title>Jena-doc2</title>
-  </head>
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
 
-  <body>
+  <title>Apache Jena - </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/loopasam/jena-doc2">View on GitHub</a>
+  <link href="/jena-doc2/css/bootstrap.css" rel="stylesheet" media="screen">
+  <link href="/jena-doc2/css/bootstrap-extension.css" rel="stylesheet" type="text/css">
+  
+  <script src="/jena-doc2//code.jquery.com/jquery.js"></script>
+  <script src="/jena-doc2/js/jena-navigation.js" type="text/javascript"></script>
+  <script src="/jena-doc2/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="/jena-doc2/js/breadcrumbs.js" type="text/javascript"></script>
+</head>
 
-          <h1 id="project_title">Jena-doc2</h1>
-          <h2 id="project_tagline">Some experiments with the Jena website</h2>
+<body>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/loopasam/jena-doc2/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/loopasam/jena-doc2/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<nav class="navbar navbar-default" role="navigation">
+<div class="container">
+  <div class="navbar-header">
+ 	<a class="navbar-brand" href="/jena-doc2/index.html">
+		<img class="logo-menu" src="/jena-doc2/images/jena-logo/jena-logo-notext-small.png" alt="jena logo">Apache Jena</a>
+  </div>
+  
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+              <li id="homepage"><a href="/jena-doc2/index.html"><span class="glyphicon glyphicon glyphicon-home"></span> Home</a></li>
+              <li id="download"><a href="/jena-doc2/download/index.html"><span class="glyphicon glyphicon-download-alt"></span> Download</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-book"></span> Learn <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header">Tutorials</li>
+                  <li><a href="/jena-doc2/tutorials/index.html">Overview</a></li>
+                  <li><a href="/jena-doc2/tutorials/rdf_api.html">RDF core API tutorial</a></li>
+                  <li><a href="/jena-doc2/tutorials/sparql.html">SPARQL tutorial</a></li>
+                  <li><a href="/jena-doc2/documentation/query/manipulating_sparql_using_arq.html">Manipulating SPARQL using ARQ</a></li>
+                  <li><a href="/jena-doc2/tutorials/using_jena_with_eclipse.html">Using Jena with Eclipse</a></li>
+                  <li><a href="/jena-doc2/documentation/notes/index.html">How-To's</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">References</li>
+                  <li><a href="/jena-doc2/documentation/index.html">Overview</a></li>
+                  <li><a href="/jena-doc2/documentation/javadoc/">Javadoc</a></li>
+                  <li><a href="/jena-doc2/documentation/rdf/index.html">RDF API</a></li>
+                  <li><a href="/jena-doc2/documentation/io/">RDF I/O</a></li>
+                  <li><a href="/jena-doc2/documentation/query/index.html">ARQ (SPARQL)</a></li>
+                  <li><a href="/jena-doc2/documentation/query/text-query.html">Text Search</a></li>
+                  <li><a href="/jena-doc2/documentation/tdb/index.html">TDB</a></li>
+                  <li><a href="/jena-doc2/documentation/sdb/index.html">SDB</a></li>
+                  <li><a href="/jena-doc2/documentation/serving_data/index.html">Fuseki</a></li>
+                  <li><a href="/jena-doc2/documentation/assembler/index.html">Assembler</a></li>
+                  <li><a href="/jena-doc2/documentation/ontology/">Ontology API</a></li>
+                  <li><a href="/jena-doc2/documentation/inference/index.html">Inference API</a></li>
+                  <li><a href="/jena-doc2/documentation/tools/index.html">Command-line tools</a></li>
+                </ul>
+              </li>
+              <li id="ask"><a href="/jena-doc2/help_and_support/index.html"><span class="glyphicon glyphicon-question-sign"></span> Ask</a></li>
+              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-bullhorn"></span> Get involved <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/jena-doc2/getting_involved/index.html">Contribute</a></li>
+                  <li><a href="/jena-doc2/help_and_support/bugs_and_suggestions.html">Report a bug</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Project</li>
+                  <li><a href="/jena-doc2/about_jena/about.html">About Jena</a></li>
+                  <li><a href="/jena-doc2/about_jena/roadmap.html">Roadmap</a></li>
+                  <li><a href="/jena-doc2/about_jena/architecture.html">Architecture</a></li>
+                  <li><a href="/jena-doc2/about_jena/team.html">Project team</a></li>
+                  <li><a href="/jena-doc2/about_jena/contributions.html">Related projects</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">ASF</li>
+                  <li><a href="http://www.apache.org/">Apache Software Foundation</a></li>
+                  <li><a href="http://www.apache.org/licenses/LICENSE-2.0">License</a></li>
+                  <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li>
+                  <li><a href="http://www.apache.org/foundation/sponsorship.html">Become a Sponsor</a></li>
+                  <li><a href="http://www.apache.org/security/">Security</a></li>
+                </ul>
+              </li>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+   
+    </ul>
+  </div>
+</div>
+</nav>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<div class="container">
+	<div class="row">
+	<div class="col-md-12">
+	<div id="breadcrumbs"></div>
+	<h1 class="title"></h1>
+  <div class="jumbotron centered">
+<div class="container">
+<img alt="Apache Jena" src="/jena-doc2/images/jena-logo/jena-logo-small.png"/>
+<h1> Apache Jena</h1>
+<p class="lead">An open source Java framework for building <a href="http://www.w3.org/standards/semanticweb/">Semantic Web</a> and <a href="http://www.w3.org/standards/semanticweb/data">Linked Data</a> applications.</p>
+<p>
+<a href="/jena-doc2/getting_started/index.html" class="btn btn-primary btn-lg">Get started »</a>
+</p>
+</div><!-- end hero unit -->
+</div>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<div class="row">
+<div class="col-md-4">
+    <h2>RDF</h2>
+        <h3><a href="/jena-doc2/documentation/rdf/index.html">RDF API</a></h3>
+        <p>Interact with the core API to create and read <a href="http://www.w3.org/RDF/">Resource Description Framework</a> (RDF) graphs. Serialise your triples using popular formats such as <a href="http://en.wikipedia.org/wiki/RDF/XML">RDF/XML</a> or <a href="http://en.wikipedia.org/wiki/Turtle_(syntax)">Turtle</a>.</p>
+        <h3><a href="/jena-doc2/documentation/query/index.html">ARQ (SPARQL)</a></h3>
+        <p>Query your RDF data using ARQ, a <a href="http://www.w3.org/TR/sparql11-query/">SPARQL 1.1</a> compliant engine. ARQ supports remote federated queries and free text search.</p>
+</div>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
+<div class="col-md-4">
+    <h2>Triple store</h2>
+        <h3><a href="/jena-doc2/documentation/tdb/index.html">TDB API</a></h3>
+        <p>Persist your data using TDB, a native high performance triple store. TDB supports the full range of Jena APIs.</p>
+        <h3><a href="/jena-doc2/documentation/serving_data/index.html">Fuseki API</a></h3>
+        <p>Expose your triples as a SPARQL end-point accessible over HTTP. Fuseki provides REST-style interaction with your RDF data.</p>
+        <h3><a href="/jena-doc2/documentation/sdb/index.html">SBD API</a></h3>
+        <p>Save your RDF data over a traditional SQL database. Many relational databases are supported, both open source and proprietary.</p>
+</div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Jena-doc2 maintained by <a href="https://github.com/loopasam">loopasam</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+<div class="col-md-4">
+    <h2>OWL</h2>
+        <h3><a href="/jena-doc2/documentation/ontology/">Ontology API</a></h3>
+        <p>Work with models, RDFS and the <a href="http://www.w3.org/standards/techs/owl#w3c_all">Web Ontology Language</a> (OWL) to add extra semantics to your RDF data.</p>
+        <h3><a href="/jena-doc2/documentation/inference/index.html">Inference API</a></h3>
+        <p>Reason over your data to expand and check the content of your triple store. Configure your own inference rules or use the built-in OWL and RDFS <a href="http://en.wikipedia.org/wiki/Semantic_reasoner">reasoners</a>.</p>
+</div>
 
-    
+</div>
 
-  </body>
+<script type="text/javascript">
+    document.getElementById("homepage").setAttribute("class", "active");
+    document.title = "Apache Jena - Home"
+</script>
+  </div>
+</div>
+
+</div><!--/.container -->
+
+    <footer class="footer">
+      <div class="container">
+        <p>Copyright &copy; 2011&ndash;2013 The Apache Software Foundation, Licensed under
+        the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.
+        </p>
+        <p>
+        Apache Jena, Jena, the Apache Jena project logo,
+        Apache and the Apache feather logos are trademarks of The Apache Software Foundation.
+        </p>
+      </div>
+  </footer>
+      
+
+</body>
 </html>
