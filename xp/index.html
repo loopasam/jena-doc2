@@ -19,7 +19,7 @@
     limitations under the License.
 -->
 
-  <title>Apache Jena - ARQ - The `java:` URI scheme</title>
+  <title>Apache Jena - Tuto schema.org</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -126,40 +126,12 @@
 	<div class="row">
 	<div class="col-md-12">
 	<div id="breadcrumbs"></div>
-	<h1 class="title">ARQ - The `java:` URI scheme</h1>
-  <p>ARQ uses URIs of the form <code>&lt;java:&lt;i&gt;package.class&lt;/i&gt;&gt;</code> to provide
-dynamic loading of code for
-<a href="extension.html#valueFunctions">value functions</a> and
-<a href="extension.html#propertyFunctions">property functions</a>. ARQ loads
-the class when needed. For functions and property functions, it
-also wraps it in the necessary factory code. A new instance of the
-function or property function is created for each mention of the
-name in each query.</p>
-<h2 id="dynamic-code-loading">Dynamic Code Loading</h2>
-<p>Any classes loaded by ARQ must already be on the java classpath.
-ARQ does not create any new class loaders, nor modify the Java
-class path in any way. The class path must be set up to include any
-class files or jar files for dynamically loaded code.</p>
-<p>Classes can be mor conveniently named in queries using SPARQL
-<code>PREFIX</code>es but because dots can't appear in the local part of a
-prefixed name, all the package name and the final dot must be in
-the <code>PREFIX</code> declaration.</p>
-<div class="codehilite"><pre><span class="nx">PREFIX</span> <span class="nx">fn</span><span class="o">:</span> <span class="o">&lt;</span><span class="nx">java</span><span class="o">:</span><span class="nx">org</span><span class="p">.</span><span class="nx">example</span><span class="p">.</span><span class="nx">functions</span><span class="p">.</span><span class="o">&gt;</span>    <span class="err">#</span> <span class="nx">Including</span> <span class="nx">the</span> <span class="kr">final</span> <span class="nx">dot</span>
-<span class="p">...</span>
-  <span class="nx">FILTER</span> <span class="nx">fn</span><span class="o">:</span><span class="nx">alter</span><span class="p">(</span><span class="o">?</span><span class="nx">x</span><span class="p">)</span>
-<span class="p">...</span>
-</pre></div>
-
-
-<h2 id="remapping">Remapping</h2>
-<p>All code loading is performed via the <code>MappedLoader</code> class. Before
-actually loading the code, the mapped loader applies any
-transformation of URIs. For example, the ARQ function library has a
-namespace of <code>&lt;http://jena.hpl.hp.com/ARQ/function#&gt;</code> and resides
-in the Java package com.hp.hpl.jena.sparql.function.library. The
-mapped loader includes a partial rewrite rule turning http URLs
-starting with that namespace into java: URIs using the package
-name.</p>
+	<h1 class="title">Tuto schema.org</h1>
+  <h2 id="test-svg">Test SVG</h2>
+<p><strong>test strong</strong>
+<object data="/images/architecture_tuto.svg" type="image/svg+xml"></object></p>
+<h2 id="other-resources">Other resources</h2>
+<p>pouet pouet</p>
   </div>
 </div>
 
