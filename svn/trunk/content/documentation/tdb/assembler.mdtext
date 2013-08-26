@@ -28,6 +28,7 @@ This is needed for use in [Fuseki](../serving_data/ "Fuseki").
 
 A dataset can be constructed in an assembler file:
 
+    :::xml
     @prefix tdb:     <http://jena.hpl.hp.com/2008/tdb#> .
     @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
     @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
@@ -46,6 +47,7 @@ directory).
 
 The first section declares the prefixes used later:
 
+    :::xml
     @prefix tdb:     <http://jena.hpl.hp.com/2008/tdb#> .
     @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
     @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .

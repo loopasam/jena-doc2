@@ -36,34 +36,35 @@ Closing the model or dataset is important. Any updates made are
 forced to disk if they have not been written already.
 
 ### Using a directory name
+    :::java
+    // Direct way: Make a TDB-backed Jena model in the named directory.
+    String directory = "MyDatabases/DB1" ;
+    Model model = TDBFactory.createModel(directory) ;
+    ...
+    model.close() ;
 
-      // Direct way: Make a TDB-backed Jena model in the named directory.
-      String directory = "MyDatabases/DB1" ;
-      Model model = TDBFactory.createModel(directory) ;
-      ...
-      model.close() ;
-
-      // Direct way: Make a TDB-backed dataset
-      String directory = "MyDatabases/Dataset1" ;
-      Dataset dataset = TDBFactory.createDataset(directory) ;
-      ...
-      dataset.close() ;
+    // Direct way: Make a TDB-backed dataset
+    String directory = "MyDatabases/Dataset1" ;
+    Dataset dataset = TDBFactory.createDataset(directory) ;
+    ...
+    dataset.close() ;
 
 ### Using an assembler file
 
-      // Assembler way: Make a TDB-back Jena model in the named directory.
-      // This way, you can change the model being used without changing the code.
-      // The assembler file is a configuration file.
-      // The same assembler description will work in Fuseki.
-      String assemblerFile = "Store/tdb-assembler.ttl" ;
-      Model model = TDBFactory.assembleModel(assemblerFile) ;
-      ...
-      model.close() ;
+    :::java
+    // Assembler way: Make a TDB-back Jena model in the named directory.
+    // This way, you can change the model being used without changing the code.
+    // The assembler file is a configuration file.
+    // The same assembler description will work in Fuseki.
+    String assemblerFile = "Store/tdb-assembler.ttl" ;
+    Model model = TDBFactory.assembleModel(assemblerFile) ;
+    ...
+    model.close() ;
 
-      String assemblerFile = "Store/tdb-assembler.ttl" ;
-      Dataset dataset = TDBFactory.assembleDataset(assemblerFile) ;
-      ...
-      dataset.close() ;
+    String assemblerFile = "Store/tdb-assembler.ttl" ;
+    Dataset dataset = TDBFactory.assembleDataset(assemblerFile) ;
+    ...
+    dataset.close() ;
 
 See
 [the TDB assembler documentation](assembler.html)
