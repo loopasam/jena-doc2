@@ -6,36 +6,100 @@ In this tutorial, we will build an example application, so called *SemEvent*, to
 
 ## The tutorial's project: SemEvent
 
-The goal of SemEvent is to gather and publish information on the web about 
-various types of events, such as a jazz concert or a marathon. For instance, on the web site of the application a user should
+The goal of our fictive app, SemEvent is to gather and publish information on the web about 
+various types of events, such as a jazz concert or a marathon. For instance, from the web site of the application, a user should
 be able to search for festivals next to where he/she lives. We would also like to expose the data through a web API
-in order for people to further build third-party applications on the top of our resources. 
+in order to enable developers to further build third-party applications on the top of our resources. 
 Finally, most of the traditional users are expected to visit the
-web site because they find it via a search engine, while looking for a particular event; therefore we would like to enrich the information we
+website because they find it via a search engine, while looking for a particular event; therefore we would like to enrich the information we
 provide to search engines in order to increase our web visibility.
 
-### Requirements
+## Requirements
 
 The tutorial assumes some previous experience with Java. Knowledge about semantic 
 technologies (RDF, SPARQL, schema.org etc.) is not mandatory but will facilitates
-the learning. When relevant, links to the main documentation are provided in order to read more about a particular topic.
-Ready? Let's start!
+the learning. You can read the next section if you need a crash course on semantic technologies and standards. 
+When relevant, links to the main documentation are provided in order to read the details about a particular topic.
 
-### The data model
+## Crash course on semantic web
 
-#### Crash course on semantic web
- 
-A semantic web application is all about the data. You are probably familiar with the relational databases and XML as a way to persists your information
-and structure your resources.
-In a semantic web application, we represent the information as a *graph*. The graph is composed of nodes and edges, also called *resources*. 
-Each resource has an identifier, which is a URI.
+Semantic web defines a series of standards for data interoperability over the web:
 
-### Architecture
+### RDF
+
+The [Resource Description Framework](http://en.wikipedia.org/wiki/Resource_Description_Framework) (**RDF**) is one of these standard. RDF is a conceptual mindset, inside which data are represented as a **graph**. Graphs are made of
+nodes and edges and have [URIs](http://en.wikipedia.org/wiki/Uniform_resource_identifier) as identifier; they are also called **resources**. The connection between two nodes by an edge is called a **triple**.
+
+Triples can be serialised in [various format](http://en.wikipedia.org/wiki/Resource_Description_Framework#Serialization_formats), such 
+as [RDF/XML](http://en.wikipedia.org/wiki/RDF/XML) or [Turtle](http://en.wikipedia.org/wiki/Turtle_(syntax)) (easier to read for humans). Example of triple: `<http://example.org/avatar> <http://example.org/director> <http://example.org/james-cameron>`. The triples encodes that *Avatar has James Cameron as director*.
+
+Serialised using the Turtle
+syntax, the same triple looks like this:
 
 
+    :::text
+    @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+    @prefix ex: <http://example.org/> .
+    
+    ex:avatar ex:director ex:james-cameron .
+    
+RDF data can also be persisted in a **triple store**. A triple store usually creates and index of the information in order to 
+perform faster queries over the data.
 
-- Crach course RDF and ontologies
-- Picture schema of the store
+With RDF, data can also be linked to types, in order to improve the structure of the information.
+For instance here we assert that Avatar is a movie, using the resource `rdf:type`, feature of RDF: `<http://example.org/avatar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movie>`. It can be serialised in Turtle as:
+
+
+    :::text
+    @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+    @prefix ex: <http://example.org/> .
+
+    ex:avatar rdf:type ex:movie .
+
+
+It is possible (and encouraged) to reuse the vocabularies and resources defined elsewhere. For instance the property `http://example.org/director` is defined by 
+a vocabulary called [schema.org](http://schema.org/) which is used by many people across the web. If we re-write 
+our triple as `<http://example.org/avatar> <http://schema.org/director> <http://example.org/james-cameron>`, a potential user or application using this triple will be able to understand better what we refer to. If everybody uses the same vocabulary, it becomes easier to merge and integrate data as well
+as to understand each other, that's the philosophy behind.
+
+### SPARQL
+
+**SPARQL** is another semantic web standard to query RDF data. The syntax is similar to SQL. The main advantage of SPARQL over SQL is the capacity
+ to query simultaneously multiple data sources, hosted by different providers (`SERVICE` feature).
+
+You can expose your RDF data to enable other users to query them in a **SPARQL end-point**, identified by a URI too. For example, the SPARQL end-point of
+DBpedia (RDF dump of Wikipedia) is located at [http://dbpedia.org/sparql](http://dbpedia.org/sparql). From there, one can directly run SPARQL queries over this RDF dataset.
+
+### OWL
+
+Finally, [RDF Schema](http://en.wikipedia.org/wiki/RDF_Schema) (RDFS) 
+and the [Web Ontology Language](http://en.wikipedia.org/wiki/Web_Ontology_Language) (OWL) are extensions of RDF and provide means to create complex vocabulary and to express relationships
+between types. A **reasoner** can understand such statements and generate new triples from them. For instance, 
+if we have the following triples:
+
+    :::text
+    @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+    @prefix ex: <http://example.org/> .
+    @prefix schema: <http://schema.org/> .
+    
+    ex:avatar rdf:type schema:Movie .
+    
+    # This is a comment; rdfs:subClassOf captures a subclass relation between two types
+    schema:Movie rdfs:subClassOf schema:CreativeWork .
+
+
+A reasoner can logically deduce `ex:avatar rdf:type schema:CreativeWork` and add it to the RDF store to enhance the query capabilities.
+
+## The data model
+
+- Picture of data model - do it with RDF-API before all
+- Code snippet of triples
+- Motivations for schema.org
+- Generating large size file
+
+## Architecture
+
 - Steps of the tuto
 
 
