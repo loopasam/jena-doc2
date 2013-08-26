@@ -1,10 +1,79 @@
-Title: Tuto schema.org
+Title: Jena framework overview
 
-## Test SVG
+Apache Jena is an open source framework for building Semantic Web and Linked Data applications. Jena is composed of
+different modules, each of them dedicated to a tackle specific problem.
+In this tutorial, we will build an example application, so called *SemEvent*, to illustrate the role of Jena's components and show how they interact.
 
-<strong>test strong</strong>
+## The tutorial's project: SemEvent
+
+The goal of SemEvent is to gather and publish information on the web about 
+various types of events, such as a jazz concert or a marathon. For instance, on the web site of the application a user should
+be able to search for festivals next to where he/she lives. We would also like to expose the data through a web API
+in order for people to further build third-party applications on the top of our resources. 
+Finally, most of the traditional users are expected to visit the
+web site because they find it via a search engine, while looking for a particular event; therefore we would like to enrich the information we
+provide to search engines in order to increase our web visibility.
+
+### Requirements
+
+The tutorial assumes some previous experience with Java. Knowledge about semantic 
+technologies (RDF, SPARQL, schema.org etc.) is not mandatory but will facilitates
+the learning. When relevant, links to the main documentation are provided in order to read more about a particular topic.
+Ready? Let's start!
+
+### The data model
+
+#### Crash course on semantic web
+ 
+A semantic web application is all about the data. You are probably familiar with the relational databases and XML as a way to persists your information
+and structure your resources.
+In a semantic web application, we represent the information as a *graph*. The graph is composed of nodes and edges, also called *resources*. 
+Each resource has an identifier, which is a URI.
+
+### Architecture
+
+
+
+- Crach course RDF and ontologies
+- Picture schema of the store
+- Steps of the tuto
+
+
 <object data="/images/architecture_tuto.svg" type="image/svg+xml"></object>
 
-## Other resources
 
-pouet pouet
+## Step1: Generating RDF files
+
+- Installation
+- Java code example how to generate the files in different format
+- Link RDF API
+- Link for the large RDF file ready to be loaded
+
+## Step 2: SPARQL query over the data
+
+- Installation
+- Crash course SPARQL
+- Pointing to ARQ documentation
+- runnign a few queries to illustrate what one can get out of the triples
+- Examples Java and command lines
+
+## Step3: Loading into TDB
+
+- Presentation TDB
+- Installation
+- command lines to dump into a new store
+- Running SPARQL query over the store
+
+## Step4: Exposing the data with Fuseki
+
+- Fuseki install
+- Performing query from interface and command lines
+- Return JSON
+
+## Step5: Building a semantic web app
+
+- Play! framework
+- Knockout.js
+- schema.org markup
+- Queries inside controller
+- Call to REST service
