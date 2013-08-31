@@ -1,0 +1,15 @@
+@prefix :      <http://localhost/> .
+@prefix schema:  <http://schema.org/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:550e8400-e29b-41d4-a716-446655440000 a schema:MusicEvent .
+:550e8400-e29b-41d4-a716-446655440000 schema:name "Paleo Festival" .
+:550e8400-e29b-41d4-a716-446655440000 schema:endDate "2011-05-05" .
+:550e8400-e29b-41d4-a716-446655440000 schema:startDate "2011-05-01" .
+:550e8400-e29b-41d4-a716-446655440000 schema:location :f47ac10b-58cc-4372-a567-0e02b2c3d479 .
+:f47ac10b-58cc-4372-a567-0e02b2c3d479 a schema:Place .
+:f47ac10b-58cc-4372-a567-0e02b2c3d479 schema:telephone "05-4503-43" .
+:f47ac10b-58cc-4372-a567-0e02b2c3d479 schema:geo :b22f5c23-2d85-4d33-b4e1-365416144394 .
+:b22f5c23-2d85-4d33-b4e1-365416144394 a schema:GeoCoordinates .
+:b22f5c23-2d85-4d33-b4e1-365416144394 schema:latitude 37 .
+:b22f5c23-2d85-4d33-b4e1-365416144394 schema:longitude -122 .

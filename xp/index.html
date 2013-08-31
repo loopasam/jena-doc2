@@ -19,7 +19,7 @@
     limitations under the License.
 -->
 
-  <title>Apache Jena - Tuto schema.org</title>
+  <title>Apache Jena - Jena framework overview</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -126,12 +126,125 @@
 	<div class="row">
 	<div class="col-md-12">
 	<div id="breadcrumbs"></div>
-	<h1 class="title">Tuto schema.org</h1>
-  <h2 id="test-svg">Test SVG</h2>
-<p><strong>test strong</strong>
-<object data="/images/architecture_tuto.svg" type="image/svg+xml"></object></p>
-<h2 id="other-resources">Other resources</h2>
-<p>pouet pouet</p>
+	<h1 class="title">Jena framework overview</h1>
+  <p>Apache Jena is an open source framework for building Semantic Web and Linked Data applications. Jena is composed of
+different modules, each of them dedicated to a tackle specific problem.
+In this tutorial, we will build an example application, so called <em>SemEvent</em>, to illustrate the role of Jena's components and show how they interact.</p>
+<h2 id="the-tutorials-project-semevent">The tutorial's project: SemEvent</h2>
+<p>The goal of our fictive app, SemEvent is to gather and publish information on the web about 
+various types of events, such as a jazz concert or a marathon. For instance, from the web site of the application, a user should
+be able to search for festivals next to where he/she lives. We would also like to expose the data through a web API
+in order to enable developers to further build third-party applications on the top of our resources. 
+Finally, most of the traditional users are expected to visit the
+website because they find it via a search engine, while looking for a particular event; therefore we would like to enrich the information we
+provide to search engines in order to increase our web visibility.</p>
+<h2 id="requirements">Requirements</h2>
+<p>The tutorial assumes some previous experience with Java. Knowledge about semantic 
+technologies (RDF, SPARQL, schema.org etc.) is not mandatory but will facilitates
+the learning. You can read the next section if you need a crash course on semantic technologies and standards. 
+When relevant, links to the main documentation are provided in order to read the details about a particular topic.</p>
+<h2 id="crash-course-on-semantic-web">Crash course on semantic web</h2>
+<p>Semantic web defines a series of standards for data interoperability over the web:</p>
+<h3 id="rdf">RDF</h3>
+<p>The <a href="http://en.wikipedia.org/wiki/Resource_Description_Framework">Resource Description Framework</a> (<strong>RDF</strong>) is one of these standard. RDF is a conceptual mindset, inside which data are represented as a <strong>graph</strong>. Graphs are made of
+nodes and edges and have <a href="http://en.wikipedia.org/wiki/Uniform_resource_identifier">URIs</a> as identifier; they are also called <strong>resources</strong>. The connection between two nodes by an edge is called a <strong>triple</strong>.</p>
+<p>Triples can be serialised in <a href="http://en.wikipedia.org/wiki/Resource_Description_Framework#Serialization_formats">various format</a>, such 
+as <a href="http://en.wikipedia.org/wiki/RDF/XML">RDF/XML</a> or <a href="http://en.wikipedia.org/wiki/Turtle_(syntax)">Turtle</a> (easier to read for humans). Example of triple: <code>&lt;http://example.org/avatar&gt; &lt;http://example.org/director&gt; &lt;http://example.org/james-cameron&gt;</code>. The triples encodes that <em>Avatar has James Cameron as director</em>.</p>
+<p>Serialised using the Turtle
+syntax, the same triple looks like this:</p>
+<div class="codehilite"><pre>@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix ex: &lt;http://example.org/&gt; .
+
+ex:avatar ex:director ex:james-cameron .
+</pre></div>
+
+
+<p>RDF data can also be persisted in a <strong>triple store</strong>. A triple store usually creates and index of the information in order to 
+perform faster queries over the data.</p>
+<p>With RDF, data can also be linked to types, in order to improve the structure of the information.
+For instance here we assert that Avatar is a movie, using the resource <code>rdf:type</code>, feature of RDF: <code>&lt;http://example.org/avatar&gt; &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://example.org/movie&gt;</code>. It can be serialised in Turtle as:</p>
+<div class="codehilite"><pre>@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix ex: &lt;http://example.org/&gt; .
+
+ex:avatar rdf:type ex:movie .
+</pre></div>
+
+
+<p>It is possible (and encouraged) to reuse the vocabularies and resources defined elsewhere. For instance the property <code>http://example.org/director</code> is defined by 
+a vocabulary called <a href="http://schema.org/">schema.org</a> which is used by many people across the web. If we re-write 
+our triple as <code>&lt;http://example.org/avatar&gt; &lt;http://schema.org/director&gt; &lt;http://example.org/james-cameron&gt;</code>, a potential user or application using this triple will be able to understand better what we refer to. If everybody uses the same vocabulary, it becomes easier to merge and integrate data as well
+as to understand each other, that's the philosophy behind.</p>
+<h3 id="sparql">SPARQL</h3>
+<p><strong>SPARQL</strong> is another semantic web standard to query RDF data. The syntax is similar to SQL. The main advantage of SPARQL over SQL is the capacity
+ to query simultaneously multiple data sources, hosted by different providers (<code>SERVICE</code> feature).</p>
+<p>You can expose your RDF data to enable other users to query them in a <strong>SPARQL end-point</strong>, identified by a URI too. For example, the SPARQL end-point of
+DBpedia (RDF dump of Wikipedia) is located at <a href="http://dbpedia.org/sparql">http://dbpedia.org/sparql</a>. From there, one can directly run SPARQL queries over this RDF dataset.</p>
+<h3 id="owl">OWL</h3>
+<p>Finally, <a href="http://en.wikipedia.org/wiki/RDF_Schema">RDF Schema</a> (RDFS) 
+and the <a href="http://en.wikipedia.org/wiki/Web_Ontology_Language">Web Ontology Language</a> (OWL) are extensions of RDF and provide means to create complex vocabulary and to express relationships
+between types. A <strong>reasoner</strong> can understand such statements and generate new triples from them. For instance, 
+if we have the following triples:</p>
+<div class="codehilite"><pre>@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix ex: &lt;http://example.org/&gt; .
+@prefix schema: &lt;http://schema.org/&gt; .
+
+ex:avatar rdf:type schema:Movie .
+
+# This is a comment; rdfs:subClassOf captures a subclass relation between two types
+schema:Movie rdfs:subClassOf schema:CreativeWork .
+</pre></div>
+
+
+<p>A reasoner can logically deduce <code>ex:avatar rdf:type schema:CreativeWork</code> and add it to the RDF store to enhance the query capabilities.</p>
+<h2 id="the-data-model">The data model</h2>
+<ul>
+<li>Picture of data model - do it with RDF-API before all</li>
+<li>Code snippet of triples</li>
+<li>Motivations for schema.org</li>
+<li>Generating large size file</li>
+</ul>
+<h2 id="architecture">Architecture</h2>
+<ul>
+<li>Steps of the tuto</li>
+</ul>
+<p><object data="/images/architecture_tuto.svg" type="image/svg+xml"></object></p>
+<h2 id="step1-generating-rdf-files">Step1: Generating RDF files</h2>
+<ul>
+<li>Installation</li>
+<li>Java code example how to generate the files in different format</li>
+<li>Link RDF API</li>
+<li>Link for the large RDF file ready to be loaded</li>
+</ul>
+<h2 id="step-2-sparql-query-over-the-data">Step 2: SPARQL query over the data</h2>
+<ul>
+<li>Installation</li>
+<li>Crash course SPARQL</li>
+<li>Pointing to ARQ documentation</li>
+<li>runnign a few queries to illustrate what one can get out of the triples</li>
+<li>Examples Java and command lines</li>
+</ul>
+<h2 id="step3-loading-into-tdb">Step3: Loading into TDB</h2>
+<ul>
+<li>Presentation TDB</li>
+<li>Installation</li>
+<li>command lines to dump into a new store</li>
+<li>Running SPARQL query over the store</li>
+</ul>
+<h2 id="step4-exposing-the-data-with-fuseki">Step4: Exposing the data with Fuseki</h2>
+<ul>
+<li>Fuseki install</li>
+<li>Performing query from interface and command lines</li>
+<li>Return JSON</li>
+</ul>
+<h2 id="step5-building-a-semantic-web-app">Step5: Building a semantic web app</h2>
+<ul>
+<li>Play! framework</li>
+<li>Knockout.js</li>
+<li>schema.org markup</li>
+<li>Queries inside controller</li>
+<li>Call to REST service</li>
+</ul>
   </div>
 </div>
 
