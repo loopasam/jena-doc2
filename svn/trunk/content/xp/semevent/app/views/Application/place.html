@@ -1,0 +1,28 @@
+#{extends 'main.html' /}
+#{set title:'Place' /}
+
+<h1>Place</h1>
+<p>Tel: <span id="telephone"></span></p>
+<p>Type: <span id="type"></span></p>
+<p>Geo: <span id="geo"></span></p>
+<p>Latitude: <span id="latitude"></span></p>
+<p>Longitude: <span id="longitude"></span></p>
+
+<div itemscope itemtype="http://schema.org/LocalBusiness">
+Phone: <span itemprop="telephone"></span>
+</div>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+    $.getJSON('/place/${placeId}.json', function(data) {
+    	  for(i in data.head.vars) {
+    		  var p = data.head.vars[i];
+    		  var value = data.results.bindings[0][p].value;
+    		  $("[itemprop|='" + p + "']").text(value);
+    	  }
+    });    
+    
+});
+</script>

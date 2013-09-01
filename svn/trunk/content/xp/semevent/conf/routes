@@ -5,7 +5,11 @@
 # Home page
 GET     /                                       Application.index
 
+GET     /place/{placeId}.json                                       Application.placeJson
 GET     /place/{placeId}                                       Application.place
+
+GET     /GeoCoordinates.json                                       Application.geoJson
+GET     /GeoCoordinates                                       Application.geo
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
