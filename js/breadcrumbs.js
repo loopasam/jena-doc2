@@ -3,7 +3,7 @@ $(document).ready(function() {
 	var url = $(location).attr('href');
 	
 	//Get the name of the domain dynamically
-	var prefix = 'http://' + location.host + '/';
+	var prefix = 'http://' + location.host + '/jena-doc2/';
 
 	if(url != prefix && url != prefix + 'index.html'){
 
