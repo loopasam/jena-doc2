@@ -12,7 +12,7 @@ grep -rl --include="*.html" 'src="/' . | xargs sed -i 's/src=\"\//src=\"\/jena-d
 
 grep -rl --include="*.html" 'href="/' . | xargs sed -i 's/href=\"\//href=\"\/jena-doc2\//g'
 # Corrects the path for JS breadcrumbs
-# grep -rl --include="breadcrumbs.js" "var prefix = 'http://localhost/';" . | xargs sed -i 's/http:\/\/localhost\//http:\/\/loopasam.github.io\/jena-doc2\//g'
+ grep -rl --include="breadcrumbs.js" "location.host + '/'" . | xargs sed -i "s/location.host + '\/'/location.host + '\/jena-doc2\/'/g"
 cd ..
 cp -R content/* $1
 # Clean the temp folder
