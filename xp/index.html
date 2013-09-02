@@ -159,10 +159,10 @@ ex:avatar ex:director ex:james-cameron .
 </pre></div>
 
 
-<p>RDF data can also be persisted in a <strong>triple store</strong>. A triple store usually creates and index of the information in order to 
+<p>RDF data can also be persisted in a <strong>triple store</strong>. A triple store usually creates an index of the information in order to 
 perform faster queries over the data.</p>
 <p>With RDF, data can also be linked to types, in order to improve the structure of the information.
-For instance here we assert that Avatar is a movie, using the resource <code>rdf:type</code>, feature of RDF: <code>&lt;http://example.org/avatar&gt; &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://example.org/movie&gt;</code>. It can be serialised in Turtle as:</p>
+For instance here we assert that Avatar is a movie, using the resource <code>rdf:type</code>, a core feature of RDF: <code>&lt;http://example.org/avatar&gt; &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://example.org/movie&gt;</code>. It can be serialised in Turtle as:</p>
 <div class="codehilite"><pre>@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix ex: &lt;http://example.org/&gt; .
 

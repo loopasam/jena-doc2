@@ -1,7 +1,9 @@
 $(document).ready(function() {
 
 	var url = $(location).attr('href');
-	var prefix = 'http://loopasam.github.io/jena-doc2/';
+	
+	//Get the name of the domain dynamically
+	var prefix = 'http://' + location.host + '/';
 
 	if(url != prefix && url != prefix + 'index.html'){
 

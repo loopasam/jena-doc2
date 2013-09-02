@@ -1,0 +1,5 @@
+tdbloader2 --loc=../tdb/ ../events.ttl
+
+tdbquery --loc=../tdb/ --query=../q1.rq
+
+http://localhost:3030/public/query?query=prefix+schema%3A+%3Chttp%3A%2F%2Fschema.org%2F%3E%0D%0Aprefix+%3A++++++%3Chttp%3A%2F%2Flocalhost%2F%3E%0D%0Aprefix+rdfs%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0Aprefix+xsd%3A+++%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0D%0Aprefix+rdf%3A+++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0A%0D%0ASELECT+%3Fevent%0D%0AWHERE+%7B%0D%0A%09%3Fevent+a+schema%3AMusicEvent+.%0D%0A%7D&output=json
