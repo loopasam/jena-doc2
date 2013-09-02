@@ -1,7 +1,9 @@
 $(document).ready(function() {
 
 	var url = $(location).attr('href');
-	var prefix = 'http://localhost/';
+	
+	//Get the name of the domain dynamically
+	var prefix = 'http://' + location.host + '/';
 
 	if(url != prefix && url != prefix + 'index.html'){
 
