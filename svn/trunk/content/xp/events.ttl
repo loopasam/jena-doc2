@@ -1,29 +1,41 @@
 @prefix schema: <http://schema.org/> .
-@prefix :      <http://localhost/> .
+@prefix :      <http://localhost:9000/> .
+@prefix place:      <http://localhost:9000/place/> .
+@prefix geocoordinates:      <http://localhost:9000/geocoordinates/> .
+@prefix event:      <http://localhost:9000/event/> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 schema:MusicEvent  rdfs:subClassOf  schema:Event .
 
-:89773c95-4b6a-4c27-a88f-699c797238ca
+geocoordinates:89773c95-4b6a-4c27-a88f-699c797238ca
         a                 schema:GeoCoordinates ;
-        schema:latitude   "52"^^xsd:int ;
-        schema:longitude  "0.5"^^xsd:int .
+        schema:latitude   "52"^^xsd:float ;
+        schema:longitude  "0.5"^^xsd:float .
 
-:b964029e-f31c-4df9-8893-1a8c4ceae6ad
+place:b964029e-f31c-4df9-8893-1a8c4ceae6ad
         a                 schema:Place ;
-        schema:geo        :89773c95-4b6a-4c27-a88f-699c797238ca ;
+        schema:geo        geocoordinates:89773c95-4b6a-4c27-a88f-699c797238ca ;
         schema:telephone  "05-4503-43" .
 
-:1aa3ccc9-c9c7-4ba2-9dff-3e5541149818
+event:1aa3ccc9-c9c7-4ba2-9dff-3e5541149818
         a                 schema:MusicEvent ;
         schema:endDate    "2011-05-01"^^xsd:date ;
-        schema:location   :b964029e-f31c-4df9-8893-1a8c4ceae6ad ;
+        schema:location   place:b964029e-f31c-4df9-8893-1a8c4ceae6ad ;
         schema:name       "Paleo Festival" ;
-        schema:startDate  "2011-05-05"^^xsd:date .
+        schema:startDate  "2011-05-05"^^xsd:date ;
+        schema:description "A cool festival next to Geneva's lake." .
         
-:89755c95-4b6a-4c27-a88f-699c797238ca
+event:88a3ccc9-c9c7-4cd5-9dff-3e5541149818
+        a                 schema:MusicEvent ;
+        schema:endDate    "2012-06-02"^^xsd:date ;
+        schema:location   place:b964029e-f31c-4df9-8893-1a8c4ceae6ad ;
+        schema:name       "Jazz Cambridge" ;
+        schema:startDate  "2012-04-12"^^xsd:date ;
+        schema:description "Swings and blues." .
+        
+geocoordinates:89755c95-4b6a-4c27-a88f-699c797238ca
         a                 schema:GeoCoordinates ;
         schema:latitude   "52"^^xsd:int ;
         schema:longitude  "0"^^xsd:int .

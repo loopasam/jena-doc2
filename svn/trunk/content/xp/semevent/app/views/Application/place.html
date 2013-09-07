@@ -1,28 +1,26 @@
 #{extends 'main.html' /}
 #{set title:'Place' /}
 
+<div itemscope itemtype="${place.value("rdf:type")}">
 <h1>Place</h1>
-<p>Tel: <span id="telephone"></span></p>
-<p>Type: <span id="type"></span></p>
-<p>Geo: <span id="geo"></span></p>
-<p>Latitude: <span id="latitude"></span></p>
-<p>Longitude: <span id="longitude"></span></p>
+Phone: <span itemprop="telephone">${place.value("schema:telephone")}</span>
+<a href="${place.value("schema:geo")}">Geocoordinates</a>
 
-<div itemscope itemtype="http://schema.org/LocalBusiness">
-Phone: <span itemprop="telephone"></span>
+#{list items:place.values("schema:name"), as:'name'}
+<p>
+<span itemprop="name">${name}</span>
+</p>
+#{/list}
 </div>
 
-
 <script type="text/javascript">
-$(document).ready(function() {
-
-    $.getJSON('/place/${placeId}.json', function(data) {
-    	  for(i in data.head.vars) {
-    		  var p = data.head.vars[i];
-    		  var value = data.results.bindings[0][p].value;
-    		  $("[itemprop|='" + p + "']").text(value);
-    	  }
-    });    
-    
-});
+//$(document).ready(function() {
+//    $.getJSON('/place/${placeId}.json', function(data) {
+//    	  for(i in data.head.vars) {
+//    		  var p = data.head.vars[i];
+//    		  var value = data.results.bindings[0][p].value;
+//    		  $("[itemprop|='" + p + "']").text(value);
+//    	  }
+//    });      
+//});
 </script>

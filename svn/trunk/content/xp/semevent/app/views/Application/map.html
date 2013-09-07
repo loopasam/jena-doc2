@@ -1,11 +1,12 @@
 #{extends 'main.html' /}
-#{set title:'Geo' /}
+#{set title:'Map' /}
+
 <div id="map-canvas"></div>
 
 <script type="text/javascript">
 $(document).ready(function() {
 
-    $.getJSON('/GeoCoordinates.json', function(data) {
+    $.getJSON('/geocoordinates.json', function(data) {
           var latitude = data.results.bindings[0]["latitude"].value;
           var longitude = data.results.bindings[0]["longitude"].value;
           

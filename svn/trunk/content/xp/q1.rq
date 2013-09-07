@@ -1,13 +1,13 @@
 prefix schema: <http://schema.org/>
-prefix :      <http://localhost/>
+prefix :      <http://localhost:9000/>
 prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 prefix xsd:   <http://www.w3.org/2001/XMLSchema#>
 prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix event:   <http://localhost:9000/event/>
 
-SELECT ?event
-WHERE {
-	?event a schema:MusicEvent .
-	:1aa3ccc9-c9c7-4ba2-9dff-3e5541149818
+CONSTRUCT WHERE {
+	?event a schema:MusicEvent ;
+           schema:endDate ?end ;
+           schema:startDate  ?start ;
+           schema:name ?name .
 }
-
-# sparql --data=../events.ttl --query=../q1.rq

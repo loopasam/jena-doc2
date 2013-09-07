@@ -5,11 +5,16 @@
 # Home page
 GET     /                                       Application.index
 
+# Schema
 GET     /place/{placeId}.json                                       Application.placeJson
 GET     /place/{placeId}                                       Application.place
+GET     /event/{eventId}                                       Application.event
+GET     /geocoordinates/{geoId}                                       Application.geocoordinates
+GET     /geocoordinates.json                                       Application.geocoordinatesJson
 
-GET     /GeoCoordinates.json                                       Application.geoJson
-GET     /GeoCoordinates                                       Application.geo
+
+# Map
+GET     /map/                                       Application.map
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

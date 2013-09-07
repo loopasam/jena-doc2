@@ -1,0 +1,7 @@
+#{extends 'main.html' /}
+#{set title:'Event' /}
+
+<div class="well" itemscope itemtype="${event.value("rdf:type")}">
+<h1>Event</h1>
+Phone: <span itemprop="name">${event.value("schema:name")}</span>
+<a href="${event.value("schema:location")}">place</a>
