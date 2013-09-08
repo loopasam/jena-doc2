@@ -3,3 +3,11 @@
 require:
     - play
     - org.apache.jena -> apache-jena-libs 2.10.1
+    - provided -> jsonld 0.0.1
+
+repositories: 
+    - provided: 
+        type:       local 
+        artifact:   "${application.path}/jar/[module]-[revision].jar" 
+        contains: 
+            - provided -> *

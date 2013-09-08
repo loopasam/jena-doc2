@@ -9,11 +9,6 @@
 
 schema:MusicEvent  rdfs:subClassOf  schema:Event .
 
-geocoordinates:89773c95-4b6a-4c27-a88f-699c797238ca
-        a                 schema:GeoCoordinates ;
-        schema:latitude   "52"^^xsd:float ;
-        schema:longitude  "0.5"^^xsd:float .
-
 place:b964029e-f31c-4df9-8893-1a8c4ceae6ad
         a                 schema:Place ;
         schema:geo        geocoordinates:89773c95-4b6a-4c27-a88f-699c797238ca ;
@@ -37,5 +32,10 @@ event:88a3ccc9-c9c7-4cd5-9dff-3e5541149818
         
 geocoordinates:89755c95-4b6a-4c27-a88f-699c797238ca
         a                 schema:GeoCoordinates ;
-        schema:latitude   "52"^^xsd:int ;
-        schema:longitude  "0"^^xsd:int .
+        schema:latitude   "52" ;
+        schema:longitude  "0" .
+        
+geocoordinates:89773c95-4b6a-4c27-a88f-699c797238ca
+        a                 schema:GeoCoordinates ;
+        schema:latitude   "51" ;
+        schema:longitude  "0.5" .

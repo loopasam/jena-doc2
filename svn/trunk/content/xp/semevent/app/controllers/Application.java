@@ -3,8 +3,14 @@ package controllers;
 import play.*;
 import play.mvc.*;
 
+import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.util.*;
+
+import org.apache.jena.riot.RDFDataMgr;
+
+import static jenajsonld.JenaJSONLD.JSONLD ;
+
 
 import com.google.gson.Gson;
 import com.hp.hpl.jena.query.Query;
@@ -92,9 +98,12 @@ public class Application extends Controller {
 
 		QueryExecution qexec = QueryExecutionFactory.sparqlService("http://localhost:3030/public/query", queryString);
 		Model coor = qexec.execConstruct();
-		coor.write(System.out, "JSON-LD");
+
+		ByteArrayOutputStream baos = new ByteArrayOutputStream() ;
+		RDFDataMgr.write(baos, coor, JSONLD) ;
+		String stringResult = baos.toString();
 		qexec.close();
-		//renderJSON();
+		renderJSON(stringResult);
 	}
 
 

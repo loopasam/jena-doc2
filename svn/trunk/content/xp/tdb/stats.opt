@@ -1,7 +1,7 @@
 (stats
   (meta
-    (timestamp "2013-09-07T17:01:22.117+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>)
-    (run@ "2013/09/07 17:01:22 BST")
+    (timestamp "2013-09-08T13:00:41.426+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>)
+    (run@ "2013/09/08 13:00:41 BST")
     (count 22))
   ((VAR <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MusicEvent>)
    2)

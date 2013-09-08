@@ -7,26 +7,19 @@
 $(document).ready(function() {
 
     $.getJSON('/geocoordinates.json', function(data) {
-          var latitude = data.results.bindings[0]["latitude"].value;
-          var longitude = data.results.bindings[0]["longitude"].value;
           
           var map;
           var mapOptions = {
-                        zoom: 9,
-                        center: new google.maps.LatLng(latitude, longitude),
+                        zoom: 7,
+                        center: new google.maps.LatLng(52.211814,0.113468),
                         mapTypeId: google.maps.MapTypeId.ROADMAP
            };
            map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+           data['@graph'].forEach(function(coord) {
+            addMarker(new google.maps.LatLng(coord.latitude, coord.longitude), map);
+          });
            
-         for(i in data.results.bindings) {
-         
-              var p = data.head.vars[i];
-              var latitude = data.results.bindings[i]["latitude"].value;
-              var longitude = data.results.bindings[i]["longitude"].value;
-              addMarker(new google.maps.LatLng(latitude, longitude), map);
-              console.log(latitude + "-" + longitude);
-          }
-          
+                     
           
     });
     
