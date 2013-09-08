@@ -8,16 +8,22 @@
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 schema:MusicEvent  rdfs:subClassOf  schema:Event .
+schema:SportsEvent  rdfs:subClassOf  schema:Event .
 
-place:b964029e-f31c-4df9-8893-1a8c4ceae6ad
+place:b964029e-f31c-4dwe9-8893-1a8c4ceae6ad
         a                 schema:Place ;
         schema:geo        geocoordinates:89773c95-4b6a-4c27-a88f-699c797238ca ;
         schema:telephone  "05-4503-43" .
 
+place:b964029e-f31c-4df9-8893-1a8c4ceae6ad
+        a                 schema:Place ;
+        schema:geo        geocoordinates:89755c95-4b6a-4c27-a88f-699c797238ca ;
+        schema:telephone  "06-3223-99" .
+
 event:1aa3ccc9-c9c7-4ba2-9dff-3e5541149818
         a                 schema:MusicEvent ;
         schema:endDate    "2011-05-01"^^xsd:date ;
-        schema:location   place:b964029e-f31c-4df9-8893-1a8c4ceae6ad ;
+        schema:location   place:b964029e-f31c-4dwe9-8893-1a8c4ceae6ad ;
         schema:name       "Paleo Festival" ;
         schema:startDate  "2011-05-05"^^xsd:date ;
         schema:description "A cool festival next to Geneva's lake." .
@@ -39,3 +45,21 @@ geocoordinates:89773c95-4b6a-4c27-a88f-699c797238ca
         a                 schema:GeoCoordinates ;
         schema:latitude   "51" ;
         schema:longitude  "0.5" .
+
+event:rty3ccc9-aac7-4cd5-9dff-3e5541149818
+        a                 schema:SportsEvent ;
+        schema:endDate    "2010-06-02"^^xsd:date ;
+        schema:location   place:plww029e-f31c-4df9-8893-1a8c4ceae6ad ;
+        schema:name       "Marathon London" ;
+        schema:startDate  "2010-04-12"^^xsd:date ;
+        schema:description "A very long run." .
+
+place:plww029e-f31c-4df9-8893-1a8c4ceae6ad
+        a                 schema:Place ;
+        schema:geo        geocoordinates:99955c95-4b6a-4c27-a88f-699c797238ca ;
+        schema:telephone  "0450879635" .
+
+geocoordinates:99955c95-4b6a-4c27-a88f-699c797238ca
+        a                 schema:GeoCoordinates ;
+        schema:latitude   "51.5" ;
+        schema:longitude  "0.25" .

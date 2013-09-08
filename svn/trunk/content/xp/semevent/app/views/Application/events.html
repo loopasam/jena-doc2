@@ -1,0 +1,15 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<h1>Events</h1>
+#{list items:events.list(), as:'event'}
+<div class="well" itemscope itemtype="${event.value(com.hp.hpl.jena.vocabulary.RDF.type)}">
+    <h2><span class="glyphicon ${event.icon()}"></span> 
+    <a href="${event}">${event.value("http://schema.org/name")}</a></h2>
+    <p><span class="glyphicon glyphicon-calendar"></span> 
+    ${event.value("http://schema.org/startDate")} till ${event.value("http://schema.org/endDate")}</p>
+    <p>
+        ${event.value("http://schema.org/description")}
+    </p>
+</div>
+#{/list}

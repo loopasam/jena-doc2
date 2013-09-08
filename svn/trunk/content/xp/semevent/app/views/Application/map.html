@@ -7,7 +7,6 @@
 $(document).ready(function() {
 
     $.getJSON('/geocoordinates.json', function(data) {
-          
           var map;
           var mapOptions = {
                         zoom: 7,
@@ -15,20 +14,33 @@ $(document).ready(function() {
                         mapTypeId: google.maps.MapTypeId.ROADMAP
            };
            map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-           data['@graph'].forEach(function(coord) {
-            addMarker(new google.maps.LatLng(coord.latitude, coord.longitude), map);
+           data['@graph'].forEach(function(event) {
+            addMarker(new google.maps.LatLng(event.latitude, event.longitude), map, event.name, event['@id']);
           });
            
                      
           
     });
     
-    function addMarker(location, map) {
+    function addMarker(location, map, name, id) {
+    
         marker = new google.maps.Marker({
             position: location,
+            animation: google.maps.Animation.DROP,
             map: map
         });
+        
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.setContent("<a href='" + id + "'>" + name + "</a>");
+            infowindow.open(map, this);
+        });
+        
     }
+    
+    var infowindow = new google.maps.InfoWindow({
+         content: "default",
+    });
+    
     
 });
 </script>

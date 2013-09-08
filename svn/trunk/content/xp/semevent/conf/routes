@@ -6,11 +6,14 @@
 GET     /                                       Application.index
 
 # Schema
+GET     /events/                                       Application.events
 GET     /place/{placeId}.json                                       Application.placeJson
 GET     /place/{placeId}                                       Application.place
 GET     /event/{eventId}                                       Application.event
 GET     /geocoordinates/{geoId}                                       Application.geocoordinates
 GET     /geocoordinates.json                                       Application.geocoordinatesJson
+
+GET     /query/{query}                                       Application.query
 
 
 # Map
