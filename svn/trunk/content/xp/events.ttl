@@ -57,7 +57,11 @@ event:rty3ccc9-aac7-4cd5-9dff-3e5541149818
 place:plww029e-f31c-4df9-8893-1a8c4ceae6ad
         a                 schema:Place ;
         schema:geo        geocoordinates:99955c95-4b6a-4c27-a88f-699c797238ca ;
-        schema:telephone  "0450879635" .
+        schema:telephone  "0450879635" ;
+        schema:address [
+        	schema:streetAddress "3102 Highway 98 London" ;
+        	schema:postalCode "SE77AA"
+        ] .
 
 geocoordinates:99955c95-4b6a-4c27-a88f-699c797238ca
         a                 schema:GeoCoordinates ;

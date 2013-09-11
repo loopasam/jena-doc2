@@ -6,17 +6,23 @@
 GET     /                                       Application.index
 
 # Schema
+# To keep - show just the properties attached to event object
+# Sort by date
 GET     /events/                                       Application.events
-GET     /place/{placeId}.json                                       Application.placeJson
-GET     /place/{placeId}                                       Application.place
+
+# Show a detailed version of the place - including map
+GET     /place/{placeId}
+
+# Shows all the info about an event type - full description                                       Application.place
 GET     /event/{eventId}                                       Application.event
-GET     /geocoordinates/{geoId}                                       Application.geocoordinates
+
+# To keep - used with google map example
 GET     /geocoordinates.json                                       Application.geocoordinatesJson
 
+# To implement - that's the endpoint
 GET     /query/{query}                                       Application.query
 
-
-# Map
+# Map - to keep - start address for the map
 GET     /map/                                       Application.map
 
 # Ignore favicon requests
