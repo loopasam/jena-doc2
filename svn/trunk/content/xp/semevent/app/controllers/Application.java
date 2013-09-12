@@ -48,22 +48,74 @@ public class Application extends Controller {
 
 		QueryExecution qexec = QueryExecutionFactory.sparqlService("http://localhost:3030/public/query", queryString);
 		Model types = qexec.execConstruct();
-		types.write(System.out, "TURTLE");
 		qexec.close();
 		render(types);
 	}
-	
-	public static void query(String query) {
-		System.out.println(query);
 
-		QueryExecution qexec = QueryExecutionFactory.sparqlService("http://localhost:3030/public/query", query);
-		ResultSet results = qexec.execSelect();
-		ByteArrayOutputStream baos = new ByteArrayOutputStream();
-		ResultSetFormatter.outputAsJSON(baos, results);
-		String stringResult = baos.toString();
-		qexec.close();
+	public static void endpoint(String query) {
+		System.out.println("query: " + query);
+		try {
+			QueryExecution qexec = QueryExecutionFactory.sparqlService("http://localhost:3030/public/query", query);
+			ResultSet results = qexec.execSelect();
+			ByteArrayOutputStream baos = new ByteArrayOutputStream();
+			ResultSetFormatter.outputAsJSON(baos, results);
+			String stringResult = baos.toString();
+			qexec.close();
+			renderJSON(stringResult);
+		} catch(Exception e) {
+			renderText(e.getLocalizedMessage());
+		}
 
-		renderJSON(stringResult);
+	}
+
+	public static void query(){
+		render();
+	}
+
+	public static void results(String query) {
+
+		try {
+			QueryExecution qexec = QueryExecutionFactory.sparqlService("http://localhost:3030/public/query", query);
+			ResultSet results = qexec.execSelect();
+			
+			//TODO put this into an extension
+
+			StringBuilder sb = new StringBuilder();
+
+			sb.append("<table class='table table-striped'><thead><tr>");
+
+			List<String> vars = results.getResultVars();
+			for (String var : vars) {
+				sb.append("<th>" + var + "</th>");
+			}
+			sb.append("</tr></thead><tbody>");
+
+			while (results.hasNext()) {
+				sb.append("<tr>");
+				QuerySolution row= results.next();
+				for (String var : vars) {
+					RDFNode cell= row.get(var);
+					sb.append("<td>");
+					if(cell.isResource()){
+						sb.append("<a href='" + cell + "'>" + cell + "</a>");
+					}else{
+						sb.append(cell);
+					}
+					sb.append("</td>");
+				}
+				sb.append("</tr>");
+			}
+			sb.append("</tbody></table>");
+
+			qexec.close();
+			render(sb);
+		} catch(Exception e) {
+			validation.addError("sparql", e.getMessage());
+			params.flash();
+			validation.keep();
+			query();
+		}
+
 	}
 
 	public static void events() {
@@ -87,10 +139,10 @@ public class Application extends Controller {
 				" schema:description ?description ." +
 				"}";
 
-		
+
 		QueryExecution qexec = QueryExecutionFactory.sparqlService("http://localhost:3030/public/query", queryString);
 		Model events = qexec.execConstruct();
-		
+
 		events.write(System.out, "TURTLE");
 		qexec.close();
 		render(events);

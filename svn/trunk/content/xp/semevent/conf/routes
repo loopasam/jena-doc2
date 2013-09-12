@@ -5,6 +5,13 @@
 # Home page
 GET     /                                       Application.index
 
+# To implement - that's the endpoint
+GET     /sparql/                                       Application.query
+POST     /results/                                       Application.results
+
+# Request from outside
+GET     /sparql/{query}                                       Application.endpoint
+
 # Schema
 # To keep - show just the properties attached to event object
 # Sort by date
@@ -18,9 +25,6 @@ GET     /event/{eventId}                                       Application.event
 
 # To keep - used with google map example
 GET     /geocoordinates.json                                       Application.geocoordinatesJson
-
-# To implement - that's the endpoint
-GET     /query/{query}                                       Application.query
 
 # Map - to keep - start address for the map
 GET     /map/                                       Application.map

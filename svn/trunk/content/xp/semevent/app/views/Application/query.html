@@ -1,0 +1,18 @@
+#{extends 'main.html' /}
+#{set title:'SPARQL Query' /}
+
+<h1>SPARQL query</h1>
+
+#{form @Application.results()}
+
+#{ifErrors}
+   #{errors}
+       <span class="label label-danger">${error}</span>
+   #{/errors}
+
+#{/ifErrors}
+    <p>
+        <textarea type="text" size="25" name="query" value="${flash.query}"></textarea>
+        <input type="submit" value="Get results" />
+    </p>
+#{/form}
